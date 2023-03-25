@@ -45,11 +45,12 @@ const Cyjet = (() => {
       releaseDate: "2022-10",
       releaseText: "october 2022",
       links: [
+        { site: "All sites", href: "https://artists.landr.com/cyjet-dust-craft" },
         { site: "Bandcamp", href: "https://cyjet.bandcamp.com/album/dust-craft" },
-        { site: "Streams", href: "https://artists.landr.com/cyjet-dust-craft" },
         { site: "Spotify", href: "https://open.spotify.com/album/2zYz71mHvjHZe3SsUcf1Dr" },
         { site: "YouTube Music", href: "https://music.youtube.com/playlist?list=OLAK5uy_mSsPea67U7Aeh7C7olJ_hqjp7dJJyjIw4" },
         { site: "Apple Music", href: "https://geo.music.apple.com/album/dust-craft-ep/1653157543" },
+        { site: "Amazon Music", href: "https://music.amazon.com/albums/B0BLHY5LPQ?ref=dm_ff_linkfire" },
       ],
       trackList: []
     },
@@ -60,8 +61,8 @@ const Cyjet = (() => {
       releaseDate: "2022-11",
       releaseText: "november 2022",
       links: [
+        { site: "All sites", href: "https://artists.landr.com/cargo-cult" },
         { site: "Bandcamp", href: "http://bandcamp.com/cyjet/cargo-cult" },
-        { site: "Streams", href: "https://artists.landr.com/cargo-cult" },
         { site: "Spotify", href: "https://open.spotify.com/album/65f26Ij2tWTVeGfBn67zQi" },
         { site: "YouTube Music", href: "https://music.youtube.com/playlist?list=OLAK5uy_m8w3wWYdBSNnLPh_wKI_Ziu0D1IvjKnPM" },
         { site: "Apple Music", href: "https://geo.music.apple.com/album/cargo-cult-ep/1658040968" },
@@ -73,11 +74,11 @@ const Cyjet = (() => {
       artist: "Cyjet",
       title: "scan lines",
       cover_image: "images/ep03 scan-lines 1024x1024.jpg",
-      releaseDate: "2023-02",
-      releaseText: "february 2023",
+      releaseDate: "2023-03",
+      releaseText: "march 2023",
       links: [
+        { site: "All sites", href: "https://artists.landr.com/cyjet-scan-lines" },
         { site: "Bandcamp", href: "http://bandcamp.com/cyjet/scan-lines" },
-        { site: "Streams", href: "https://artists.landr.com/cyjet-scan-lines" },
         { site: "Spotify", href: "https://open.spotify.com/album/6mW2yAqITqCMA8Oo60gIbk" },
         { site: "YouTube Music", href: "https://music.youtube.com/playlist?list=OLAK5uy_knYV1jeY4jkXNBiQ01en3p9kmGVn5Arro" },
         { site: "Apple Music", href: "https://geo.music.apple.com/album/scan-lines-ep/1675167080" },
