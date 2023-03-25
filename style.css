@@ -1,0 +1,160 @@
+/* style.css
+ * Page CSS definitions 
+ */
+
+:root {
+  --main-bg-colour: #222233;
+  --bg-colour-1: #fff8ee;
+  --bg-colour-2: #333344;
+  --bg-colour-3: #bbbbbb;
+  --shadow-colour: #111111;
+  --text-colour: #bbaa88;
+  --alt-text-colour: #ff9999;
+  --info-text-colour: #887755;
+  --radius: 6px;
+}
+
+body {
+  font-family: Catamaran, Avenir, Roboto, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+
+  background-color: var(--main-bg-colour);
+  /* background: url(images/wimmera-lowq.jpg) top center no-repeat; */
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* ---------------- */
+.header {
+  padding: 15pt 10pt;
+}
+
+.header .title {
+  font-family: Catamaran, Avenir, Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 400%;
+  letter-spacing: 8pt;
+  color: var(--text-colour);
+  padding: 0;
+  border-style: solid;
+  border-width: 1pt 0 1pt 0;
+  border-color: #999;
+}
+
+#logo {
+  display: none;
+  width: 20%;
+  float: right;
+  border-radius: var(--radius);
+}
+
+/* ---------------- */
+.ui {
+  margin: 0pt 10pt 10pt 10pt;
+}
+
+.content {
+  margin: 10pt 0pt;
+  /* height: 40vh; */
+  overflow: auto;
+  border-radius: var(--radius);
+}
+
+a {
+  color: var(--alt-text-colour);
+  text-decoration: none;
+}
+
+#releases {
+  display: block;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 5pt 0pt;
+}
+
+.release {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  border-radius: var(--radius);
+  margin: 20pt 0pt;
+  padding: 10pt 0pt;
+}
+
+.release:hover {
+}
+
+.release-info {
+  display: block;
+  color: var(--info-text-colour);
+  width: 400px;
+  border-radius: var(--radius);
+  padding: 10pt;
+}
+
+.release-info:hover {
+  background-color: var(--bg-colour-2);
+  transition: all;
+  transition-duration: 1s;
+}
+
+/* Release styling */
+.title {
+  font-family: serif;
+  font-size: 140%;
+  color: var(--text-colour);
+  text-decoration: none;
+  width: 200px;
+  display: inline;
+  cursor: pointer;
+}
+
+.link {
+  font-size: 90%;
+  color: var(--info-text-colour);
+  margin-right: 4pt;
+}
+
+.link:hover {
+  color: var(--alt-text-colour);
+}
+
+.image {
+  margin: 0 10pt;
+  width: 200px;
+  height: 200px;
+  opacity: 0.8;
+  border-radius: var(--radius);
+  box-shadow: 5px 5px 5px var(--shadow-colour);
+}
+
+.image:hover {
+  opacity: 1.0;
+}
+
+/* ---------------- */
+.footer {
+  /* background-color: var(--bg-colour-2); */
+  opacity: 0.7;
+  color: var(--text-colour);
+  font-size: 90%;
+  /* margin: 0pt 10pt; */
+  padding: 5pt 5pt;
+  border-radius: var(--radius);
+}
+
+.footer:hover {
+  background-color: var(--bg-colour-2);
+  opacity: 0.9;
+  transition: all;
+  transition-duration: 1s;
+}
+
+a {
+  color: #555;
+}
+
+/* The End */
