@@ -45,8 +45,9 @@ body {
   letter-spacing: 8pt;
   color: var(--text-colour);
   border-style: solid;
-  border-width: 1pt 0 1pt 0;
+  border-width: 1pt 0 0pt 1pt;
   border-color: #999;
+  padding: 0pt 0 0 15pt;
 }
 
 #logo {
@@ -106,9 +107,9 @@ a {
 
 /* Release styling */
 .title {
-  font-family: serif;
+  font-family: Palatino, serif;
   font-size: 140%;
-  letter-spacing: 1pt;
+  letter-spacing: 2pt;
   color: var(--text-colour);
   text-decoration: none;
   width: 200px;
