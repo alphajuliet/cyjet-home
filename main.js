@@ -16,6 +16,12 @@ jQuery.fn.extend({
   }
 });
 
+jQuery.fn.extend({
+  reduce_: function (fn, list) {
+    return R.reduce(fn, this, list);
+  }
+});
+
 //-------------------
 // Main namespace
 
@@ -104,44 +110,27 @@ const Cyjet = (() => {
     }
   ];
 
-  // ====================================================
-  // Rendering functions
-
   const renderLink = R.curry((target, link) => {
     return $(target).append_($(`<a class="link" href="${link.href}">${link.site}</a>`));
   });
 
-  const renderLinks = R.curry((target, release) => {
-    return R.reduce(renderLink, target, release.links);
-  });
-
   const renderRelease = R.curry((target, release) => {
-    const release_info = $(`<div class="release-info"></div>`);
+    const rel = $(`<div class="release"></div>`)
+          .append_($(`<img class="image" src="${release.cover_image}"/>`))
+          .append_($(`<div class="release-info"></div>`)
+                   .append_($(`<div class="title">${ release.title }</div>`))
+                   .append_($(`<div class="releaseText">${ release.releaseText }</div>`))
+                   .reduce_(renderLink, release.links));
 
-    const title = $(`<div class="title">${ release.title }</div>`);
-    const releaseText = $(`<div>${ release.releaseText }</div>`);
-    const info = $(release_info).append_(title).append_(releaseText);
-    const info2 = renderLinks(info, release);
-
-    const container1 = $(`<div class="release"></div>`);
-    const image = $(`<img class="image" src="${release.cover_image}"/>`)
-
-    const rel = $(container1).append_(image).append_(info2);
     return $(target).append_(rel);
-  });
-
-  const renderReleasesTo = R.curry((target, corpus) => {
-    const releases = $(`<div class="releases"></div>`);
-    return R.reduce(renderRelease, target, corpus);
   });
 
   // -------------------
   // Initialise the page with content
-
   const initialise = () => {
     Info.appendTitleTo(".header");
     Info.appendVersionDateTo("#attribution");
-    renderReleasesTo("#releases", MyReleases);
+    R.reduce(renderRelease, "#releases", MyReleases);
     console.log("Initialised.");
   };
 
