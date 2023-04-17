@@ -103,7 +103,7 @@ const Cyjet = (() => {
         { site: "Bandcamp", href: "https://bandcamp.com/cyjet/neon-ride" },
         { site: "Spotify", href: "https://open.spotify.com/album/5viirWr8G3z1tRK8bmpoqh" },
         { site: "YouTube Music", href: "https://music.youtube.com/playlist?list=OLAK5uy_mNVd3VT72flKorj0J_xcVKIJEoWlx6w1c" },
-        { site: "Apple Music", href: "" },
+        { site: "Apple Music", href: "https://music.apple.com/au/album/neon-ride-ep/1682262897" },
         { site: "Amazon Music", href: "https://music.amazon.com/albums/B0C2D5R8GM?ref=dm_ff_linkfire" },
       ],
       trackList: ["No-one Else Around", "Sexkontakt", "Fluorescence", "As Colours Edge"]
