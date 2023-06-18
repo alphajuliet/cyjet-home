@@ -8,14 +8,14 @@
   --bg-colour-2: #333344;
   --bg-colour-3: #bbbbbb;
   --shadow-colour: #111111;
-  --text-colour: #bbaa88;
+  --text-colour: #bb6688;
   --alt-text-colour: #ff9999;
   --info-text-colour: #777788;
   --radius: 8px;
 }
 
 body {
-  font-family: Catamaran, Avenir, Roboto, Helvetica, Arial, sans-serif;
+  font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
   font-size: 12pt;
   margin-left: auto;
   margin-right: auto;
@@ -107,7 +107,7 @@ a {
 
 /* Release styling */
 .title {
-  font-family: Palatino, serif;
+  /* font-family: Palatino, serif; */
   font-size: 140%;
   letter-spacing: 2pt;
   color: var(--text-colour);
@@ -115,6 +115,10 @@ a {
   width: 200px;
   display: inline;
   cursor: pointer;
+}
+
+.title:hover {
+  color: var(--alt-text-colour);
 }
 
 .link {
