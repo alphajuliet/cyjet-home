@@ -30,11 +30,11 @@ const Cyjet = (() => {
   const Info = {
     title: "cyjet",
     author: "AndrewJ",
-    version: "0.3",
-    date: "2023-06-18",
+    version: "0.4",
+    date: "2023-08-30",
     info: "Cyjet home",
     appendTitleTo: (tagName) => {
-      $(tagName).append($(`<span class="title">cчjεt</span>`));
+      $(tagName).append($(`<span class="title">cyjet ::</span>`));
       return tagName;
     },
     appendVersionDateTo: (tagName) => {
@@ -52,8 +52,10 @@ const Cyjet = (() => {
           .append_($(`<img class="image" src="${release.cover_image}"/>`))
           .append_($(`<div class="release-info"></div>`)
                    .append_($(`<div class="title">${release.title }</div>`))
-                   .append_($(`<div class="releaseText">${ release.id } | ${ release.releaseText }</div>`))
-                   .reduce_(renderLink, release.links));
+                   .append_($(`<div class="releaseText">${release.id} | ${ release.releaseText }</div>`))
+                   .append_($(`<div class="tracks">📂&nbsp;${R.join(" | ", release.trackList)}</div>`))
+                   .append_($(`<div class="links">🎧&nbsp;</div>`)
+                            .reduce_(renderLink, release.links)));
 
     return $(target).append_(rel);
   });
