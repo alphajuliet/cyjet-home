@@ -11,9 +11,10 @@ const MyReleases = [
     links: [
       { site: "All sites", href: "https://artists.landr.com/cyjet-light-chaser" },
       { site: "Bandcamp", href: "https://cyjet.bandcamp.com/album/light-chaser" },
-      { site: "Spotify", href: "" },
-      { site: "YouTube Music", href: "" },
+      { site: "Spotify", href: "https://open.spotify.com/album/1IyaT7G1eO1sXqpvMdgVEW" },
+      { site: "YouTube Music", href: "https://geo.music.apple.com/album/light-chaser-ep/1704877693" },
       { site: "Apple Music", href: "https://music.apple.com/us/album/light-chaser-ep/1704877693" },
+      { site: "iTunes", href: "https:geo.music.apple.com/album/light-chaser-ep/1704877693" },
       { site: "Amazon Music", href: "https://music.amazon.com/albums/B0CGVTNVSR" },
     ],
     trackList: ["Versoix", "Leftstep", "Wanda in Christmas", "Dovetail"]

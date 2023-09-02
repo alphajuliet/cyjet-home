@@ -10,7 +10,9 @@
   --shadow-colour: #111111;
   --text-colour: #bb6688;
   --alt-text-colour: #ff9999;
+  --text-shadow-colour: #442233;
   --info-text-colour: #777788;
+  --info-text-colour-2: #9999AA;
   --radius: 8px;
 }
 
@@ -39,12 +41,14 @@ body {
 }
 
 /* Cyjet title  */
-.header .title {
+.page-title {
   font-family: IBM Plex Sans, Avenir, Arial, sans-serif;
   font-weight: lighter;
   font-size: 400%;
-  letter-spacing: 8pt;
   color: var(--text-colour);
+  letter-spacing: 8pt;
+  margin-left: -10pt;
+  text-shadow: 5px 5px 5px var(--text-shadow-colour);
   /* border-style: dotted; */
   /* border-width: 0 0 0 1pt; */
   /* border-color: #999; */
@@ -85,7 +89,8 @@ a {
 
 .release {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
+  flex-wrap: none;
   justify-content: flex-start;
   border-radius: var(--radius);
   margin: 10pt 0pt;
@@ -106,6 +111,11 @@ a {
   transition-duration: 1s;
 }
 
+.releaseText {
+  color: var(--info-text-colour-2);
+  font-size: 90%;
+}
+
 .tracks {
   display: block;
   font-size: 90%;
@@ -120,8 +130,9 @@ a {
   color: var(--text-colour);
   text-decoration: none;
   width: 200px;
-  display: inline;
+  display: block;
   cursor: pointer;
+  margin-bottom: 10pt;
 }
 
 .title:hover {
