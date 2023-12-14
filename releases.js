@@ -3,6 +3,24 @@
 const MyReleases = [
   {
     artist: "Cyjet",
+    id: "ep07",
+    title: "switch break",
+    cover_image: "images/ep07 switch-break 1024x1024.jpg",
+    releaseDate: "2023-12",
+    releaseText: "december 2023",
+    links: [
+      { site: "All sites", href: "https://artists.landr.com/cyjet-switch-break" },
+      { site: "Bandcamp", href: "https://cyjet.bandcamp.com/album/switch-break" },
+      { site: "Spotify", href: "https://open.spotify.com/album/0kVMqplY6WADOs853XmvLG" },
+      { site: "YouTube Music", href: "https://music.youtube.com/playlist?list=OLAK5uy_mJmWfriVWpcZ-jNiRpssP0geqsMmnNVLY" },
+      { site: "Apple Music", href: "https://music.apple.com/us/album/switch-break-ep/1720999334?app=music" },
+      { site: "iTunes", href: "https://music.apple.com/us/album/switch-break-ep/1720999334" },
+      { site: "Amazon Music", href: "https://music.amazon.com.au/albums/B0CQ2QNTG4" },
+    ],
+    trackList: ["Desert Shift", "Olivine", "Diana Flats, 1932", "Zone Block"]
+  },
+  {
+    artist: "Cyjet",
     id: "ep06",
     title: "light chaser",
     cover_image: "images/ep06 light-chaser 1024x1024.jpg",

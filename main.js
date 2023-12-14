@@ -34,7 +34,7 @@ const Cyjet = (() => {
     date: "2023-08-30",
     info: "Cyjet home",
     appendTitleTo: (tagName) => {
-      $(tagName).append($(`<span class="page-title">cyjet ::</span>`));
+      $(tagName).append($(`<span class="page-title">cyjet ◮</span>`));
       return tagName;
     },
     appendVersionDateTo: (tagName) => {
