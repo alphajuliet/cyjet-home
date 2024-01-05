@@ -156,8 +156,8 @@ a {
 
 .image {
   padding: 10ot 0pt;
-  width: 200px;
-  height: 200px;
+  width: 20%;
+  height: 20%;
   opacity: 0.8;
   border-radius: var(--radius);
   box-shadow: 5px 5px 5px var(--shadow-colour);
