@@ -3,6 +3,24 @@
 const MyReleases = [
   {
     artist: "Cyjet",
+    id: "ep08",
+    title: "dead north",
+    cover_image: "images/ep08 dead-north 1024x1024.jpg",
+    releaseDate: "2024-02",
+    releaseText: "february 2024",
+    links: [
+      { site: "All sites", href: "https://artists.landr.com/cyjet-dead-north" },
+      { site: "Bandcamp", href: "https://cyjet.bandcamp.com/album/dead-north" },
+      { site: "Spotify", href: "https://open.spotify.com/album/5zgWTkoQSpnEymwVsY5iMi" },
+      { site: "YouTube Music", href: "https://music.youtube.com/" },
+      { site: "Apple Music", href: "https://geo.music.apple.com/album/dead-north-ep/1733094270" },
+      { site: "iTunes", href: "https://geo.music.apple.com/album/dead-north-ep/1733094270" },
+      { site: "Amazon Music", href: "https://music.amazon.com/albums/B0CWJMFQ2W?ref=dm_ff_linkfire" },
+    ],
+    trackList: ["Overheard", "Triphex", "Layer", "Arodove"]
+  },
+  {
+    artist: "Cyjet",
     id: "ep07",
     title: "switch break",
     cover_image: "images/ep07 switch-break 1024x1024.jpg",
