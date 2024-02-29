@@ -12,7 +12,7 @@ const MyReleases = [
       { site: "All sites", href: "https://artists.landr.com/cyjet-dead-north" },
       { site: "Bandcamp", href: "https://cyjet.bandcamp.com/album/dead-north" },
       { site: "Spotify", href: "https://open.spotify.com/album/5zgWTkoQSpnEymwVsY5iMi" },
-      { site: "YouTube Music", href: "https://music.youtube.com/" },
+      { site: "YouTube Music", href: "https://music.youtube.com/playlist?list=OLAK5uy_mtrgODvzHhqMzH7an9HA_xtHqGbU86hlU" },
       { site: "Apple Music", href: "https://geo.music.apple.com/album/dead-north-ep/1733094270" },
       { site: "iTunes", href: "https://geo.music.apple.com/album/dead-north-ep/1733094270" },
       { site: "Amazon Music", href: "https://music.amazon.com/albums/B0CWJMFQ2W?ref=dm_ff_linkfire" },
