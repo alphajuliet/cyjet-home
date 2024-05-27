@@ -3,6 +3,24 @@
 const MyReleases = [
   {
     artist: "Cyjet",
+    id: "ep09",
+    title: "tidal forms",
+    cover_image: "images/ep09 tidal forms 1024x1024.jpg",
+    releaseDate: "2024-05",
+    releaseText: "may 2024",
+    links: [
+      { site: "All sites", href: "https://artists.landr.com/cyjet-tidal-forms" },
+      { site: "Bandcamp", href: "https://cyjet.bandcamp.com/album/tidal-forms" },
+      { site: "Spotify", href: "https://open.spotify.com/album/4uqstauoaZi7vaXKyfVLVn" },
+      { site: "YouTube Music", href: "https://music.youtube.com/playlist?list=OLAK5uy_lqnAauCz1Vq2qdWtfBfD3zIqPcs1dZOw4" },
+      { site: "Apple Music", href: "https://music.apple.com/jp/album/tidal-forms-ep/1748353310?l=en-US" },
+      { site: "iTunes", href: "https://music.apple.com/jp/album/tidal-forms-ep/1748353310?l=en-US" },
+      { site: "Amazon Music", href: "https://music.amazon.com.au/albums/B0D57S6H1D" },
+    ],
+    trackList: ["Mash", "Memory", "Darius", "Where to begin?"]
+  },
+  {
+    artist: "Cyjet",
     id: "ep08",
     title: "dead north",
     cover_image: "images/ep08 dead-north 1024x1024.jpg",

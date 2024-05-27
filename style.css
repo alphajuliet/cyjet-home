@@ -8,7 +8,7 @@
   --bg-colour-2: #333344;
   --bg-colour-3: #bbbbbb;
   --shadow-colour: #111111;
-  --text-colour: #bb6688;
+  --text-colour: #aa88ff;
   --alt-text-colour: #ff9999;
   --text-shadow-colour: #442233;
   --info-text-colour: #777788;
@@ -42,7 +42,7 @@ body {
 
 /* Cyjet title  */
 .page-title {
-  font-family: IBM Plex Sans, Avenir, Arial, sans-serif;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: lighter;
   font-size: 400%;
   color: var(--text-colour);
