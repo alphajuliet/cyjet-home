@@ -3,6 +3,25 @@
 const MyReleases = [
   {
     artist: "Cyjet",
+    id: "ep10",
+    title: "assemblage",
+    cover_image: "images/ep10 assemblage 1024x1024.jpg",
+    releaseDate: "2024-08",
+    releaseText: "august 2024",
+    links: [
+      { site: "All sites", href: "https://artists.landr.com/cyjet-assemblage" },
+      { site: "Bandcamp", href: "https://cyjet.bandcamp.com/album/assemblage" },
+      { site: "Spotify", href: "https://open.spotify.com/album/7J5zn4vqJLQK2SQ236Gj2S" },
+      { site: "YouTube Music", href: "//" },
+      { site: "Apple Music", href: "https://music.apple.com/us/album/assemblage-ep/1763489361" },
+      { site: "iTunes", href: "https://music.apple.com/us/album/assemblage-ep/1763489361" },
+      { site: "Amazon Music", href: "https://music.amazon.com/albums/B0DDHBQRLB?ref=dm_ff_linkfire" },
+      { site: "Deezer", href: "https://www.deezer.com/album/631190451" },
+    ],
+    trackList: ["Indicator", "Burning Tree", "Orenea", "Ethera"]
+  },
+  {
+    artist: "Cyjet",
     id: "ep09",
     title: "tidal forms",
     cover_image: "images/ep09 tidal forms 1024x1024.jpg",
