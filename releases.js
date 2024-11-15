@@ -3,6 +3,47 @@
 const MyReleases = [
   {
     artist: "Cyjet",
+    id: "ep11",
+    title: "datasight",
+    cover_image: "images/ep11 datasight 1500x1500.jpg",
+    releaseDate: "2024-11",
+    releaseText: "november 2024",
+    links: [
+      {
+        site: "All sites",
+        href: "https://artists.landr.com/cyjet-datasight",
+      },
+      {
+        site: "Bandcamp",
+        href: "https://cyjet.bandcamp.com/album/datasight",
+      },
+      {
+        site: "Spotify",
+        href: "https://open.spotify.com/album/1iJ1EOm8TgJK7lQQRbEcDy",
+      },
+      {
+        site: "YouTube Music",
+        href: "https://music.youtube.com/playlist?list=OLAK5uy_mSY9n1KbbonQwKC5EGOnAnHafbFY3T6c0",
+      },
+      {
+        site: "Apple Music",
+        href: "https://music.apple.com/us/album/datasight-ep/1778979357",
+      },
+      {
+        site: "iTunes",
+        href: "https://music.apple.com/us/album/datasight-ep/1778979357",
+      },
+      {
+        site: "Amazon Music",
+        href: "https://music.amazon.com/albums/B0DMMNHF95?ref=dm_ff_amazonmusic.3p",
+      },
+      { site: "Deezer", 
+        href: "https://www.deezer.com/album/668372221" },
+    ],
+    trackList: ["Prism", "Ocean Motion", "Chondrite", "Deep Web"],
+  },
+  {
+    artist: "Cyjet",
     id: "ep10",
     title: "assemblage",
     cover_image: "images/ep10 assemblage 1024x1024.jpg",
