@@ -3,6 +3,7 @@
  */
 
 :root {
+  --page-bg-colour: #111122;
   --main-bg-colour: #222233;
   --bg-colour-1: #fff8ee;
   --bg-colour-2: #333344;
@@ -10,7 +11,7 @@
   --shadow-colour: #111111;
   --text-colour: #aa88ff;
   --alt-text-colour: #ff9999;
-  --text-shadow-colour: #442233;
+  --text-shadow-colour: #664455;
   --info-text-colour: #777788;
   --info-text-colour-2: #9999AA;
   --radius: 8px;
@@ -23,7 +24,7 @@ body {
   margin-right: auto;
   max-width: 850px;
 
-  background-color: #111122;
+  background-color: var(--page-bg-colour);
   /* background: url(images/wimmera-lowq.jpg) top center no-repeat; */
   background-size: cover;
   background-attachment: fixed;
@@ -42,17 +43,20 @@ body {
 
 /* Cyjet title  */
 .page-title {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-weight: lighter;
+  font-family: Unica One, Helvetica, Aptos, Arial, sans-serif;
+  font-weight: normal;
   font-size: 400%;
   color: var(--text-colour);
-  letter-spacing: 8pt;
+  letter-spacing: 4pt;
   margin-left: -10pt;
   text-shadow: 5px 5px 5px var(--text-shadow-colour);
+  background-color: var(--page-bg-colour);
   /* border-style: dotted; */
   /* border-width: 0 0 0 1pt; */
   /* border-color: #999; */
   /* padding: 0pt 0 0 15pt; */
+  width: 150%;
+  display: block;
 }
 
 #logo {
@@ -129,6 +133,7 @@ a {
   letter-spacing: 1pt;
   color: var(--text-colour);
   text-decoration: none;
+  text-shadow: 3px 3px 3px var(--text-shadow-colour);
   width: 200px;
   display: block;
   cursor: pointer;
@@ -136,7 +141,7 @@ a {
 }
 
 .title:hover {
-  color: var(--alt-text-colour);
+  /* color: var(--alt-text-colour); */
 }
 
 .links {
