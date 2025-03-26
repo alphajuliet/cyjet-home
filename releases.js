@@ -5,7 +5,7 @@ const MyReleases = [
     artist: "Cyjet",
     id: "ep12",
     title: "polyform",
-    cover_image: "images/ep12 polyform 1500x1500.jpg",
+    cover_image: "images/ep12 polyform 1200x1200.jpg",
     releaseDate: "2025-03",
     releaseText: "march 2025",
     links: [
