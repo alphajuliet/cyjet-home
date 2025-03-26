@@ -3,6 +3,51 @@
 const MyReleases = [
   {
     artist: "Cyjet",
+    id: "ep12",
+    title: "polyform",
+    cover_image: "images/ep12 polyform 1500x1500.jpg",
+    releaseDate: "2025-03",
+    releaseText: "march 2025",
+    links: [
+      {
+        site: "All sites",
+        href: "https://artists.landr.com/cyjet-polyform",
+      },
+      {
+        site: "Bandcamp",
+        href: "https://cyjet.bandcamp.com/album/polyform",
+      },
+      {
+        site: "Spotify",
+        href: "https://open.spotify.com/album/5yjOGAenDWZ94KzMhp98Xj",
+      },
+      {
+        site: "YouTube Music",
+        href: "https://music.youtube.com/playlist?list=OLAK5uy_mRd4_fBK9vXW1seGfN4lRAAXUbY5L5Cb0",
+      },
+      {
+        site: "Apple Music",
+        href: "https://geo.music.apple.com/album/polyform-ep/1804196601",
+      },
+      {
+        site: "iTunes",
+        href: "https://geo.music.apple.com/album/polyform-ep/1804196601",
+      },
+      {
+        site: "Amazon Music",
+        href: "https://artists.landr.com/cyjet-polyform",
+      },
+      { site: "Deezer", 
+        href: "https://artists.landr.com/cyjet-polyform" 
+      },
+      { site: "Tidal",
+        href: "https://artists.landr.com/cyjet-polyform"
+      }
+    ],
+    trackList: ["Infliction", "Zoned Out", "Transfinite", "Londeth (by misadventure)"],
+  },
+  {
+    artist: "Cyjet",
     id: "ep11",
     title: "datasight",
     cover_image: "images/ep11 datasight 1500x1500.jpg",
