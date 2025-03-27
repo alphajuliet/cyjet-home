@@ -35,13 +35,15 @@ const MyReleases = [
       },
       {
         site: "Amazon Music",
-        href: "https://artists.landr.com/cyjet-polyform",
+        href: "https://music.amazon.com/albums/B0F2BYQZLP?ref=dm_ff_amazonmusic.3p",
       },
-      { site: "Deezer", 
-        href: "https://artists.landr.com/cyjet-polyform" 
+      { 
+        site: "Deezer", 
+        href: "https://www.deezer.com/album/732342371" 
       },
-      { site: "Tidal",
-        href: "https://artists.landr.com/cyjet-polyform"
+      { 
+        site: "Tidal",
+        href: "http://www.tidal.com/album/426003865"
       }
     ],
     trackList: ["Infliction", "Zoned Out", "Transfinite", "Londeth (by misadventure)"],
