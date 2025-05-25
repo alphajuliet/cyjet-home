@@ -1,4 +1,4 @@
-name = "cyjet-home"
+name = "cyjet"
 compatibility_date = "2024-09-25"
 assets = { directory = "." }
 
