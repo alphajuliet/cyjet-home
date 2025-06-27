@@ -3,6 +3,53 @@
 const MyReleases = [
   {
     artist: "Cyjet",
+    id: "ep13",
+    title: "inland sea",
+    cover_image: "images/ep13 inland-sea 1200x1200.jpg",
+    releaseDate: "2025-06",
+    releaseText: "june 2025",
+    links: [
+      {
+        site: "All sites",
+        href: "https://artists.landr.com/cyjet-inland-sea",
+      },
+      {
+        site: "Bandcamp",
+        href: "https://cyjet.bandcamp.com/album/inland-sea",
+      },
+      {
+        site: "Spotify",
+        href: "https://open.spotify.com/album/14awnNHwDK1NZ2ZBc0IqIq",
+      },
+      {
+        site: "YouTube Music",
+        href: "https://www.youtube.com/channel/UCAr1Pxchd2yQBmFmuNBIRPw",
+      },
+      {
+        site: "Apple Music",
+        href: "https://geo.music.apple.com/album/inland-sea-ep/1821089581",
+      },
+      {
+        site: "iTunes",
+        href: "https://geo.music.apple.com/album/inland-sea-ep/1821089581",
+      },
+      {
+        site: "Amazon Music",
+        href: "https://music.amazon.com/albums/B0FDDQTT34?ref=dm_ff_amazonmusic.3p",
+      },
+      { 
+        site: "Deezer", 
+        href: "https://www.deezer.com/album/773642601" 
+      },
+      { 
+        site: "Tidal",
+        href: "http://www.tidal.com/album/442523395"
+      }
+    ],
+    trackList: ["Refracted", "Moongazer", "By the time you hear this", "Translucent", "Suddenly, Nothing", "Mauveine"],
+  },
+  {
+    artist: "Cyjet",
     id: "ep12",
     title: "polyform",
     cover_image: "images/ep12 polyform 1200x1200.jpg",
