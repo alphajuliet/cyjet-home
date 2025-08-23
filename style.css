@@ -114,14 +114,15 @@ a {
   transition: all 0.3s ease;
 }
 
-.release:hover .release-detail {
+.release-info:hover .release-detail,
+.release-info.touch-active .release-detail {
   display: block;
-}
-
-.release-info:hover {
   background-color: var(--bg-colour-2);
   transition: all;
   transition-duration: 1s;
+}
+
+.release-info:hover {
 }
 
 .releaseText {

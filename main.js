@@ -72,12 +72,34 @@ const Cyjet = (() => {
     return target;
   });
 
+  // Handle touch interactions for mobile devices
+  const setupTouchHandlers = () => {
+    document.addEventListener('touchstart', (e) => {
+      const releaseInfo = e.target.closest('.release-info');
+      if (releaseInfo) {
+        // Remove active state from all other release-info elements
+        document.querySelectorAll('.release-info.touch-active').forEach(el => {
+          if (el !== releaseInfo) el.classList.remove('touch-active');
+        });
+        // Toggle active state on touched release-info
+        releaseInfo.classList.toggle('touch-active');
+        e.preventDefault();
+      } else {
+        // Touched outside any release-info, remove all active states
+        document.querySelectorAll('.release-info.touch-active').forEach(el => {
+          el.classList.remove('touch-active');
+        });
+      }
+    });
+  };
+
   // -------------------
   // Initialise the page with content
   const initialise = () => {
     Info.appendTitleTo(".header");
     Info.appendVersionDateTo("#attribution");
     reduce(renderRelease, "#releases", MyReleases);
+    setupTouchHandlers();
     console.log("Initialised.");
   };
 
