@@ -1,0 +1,667 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "MusicGroup",
+  "name": "Cyjet",
+  "alternateName": "cyjet",
+  "url": "https://cyjet.online",
+  "genre": ["Electronic", "Ambient", "Techno", "Downtempo"],
+  "foundingLocation": {
+    "@type": "Place",
+    "name": "Sydney, Australia"
+  },
+  "member": {
+    "@type": "Person",
+    "name": "AndrewJ",
+    "roleName": "Producer, Composer"
+  },
+  "sameAs": [
+    "https://cyjet.bandcamp.com",
+    "https://open.spotify.com/artist/cyjet",
+    "https://music.apple.com/artist/cyjet",
+    "https://music.youtube.com/channel/UCAr1Pxchd2yQBmFmuNBIRPw"
+  ],
+  "album": [
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://cyjet.online/releases/ep13",
+      "name": "inland sea",
+      "alternateName": "Inland Sea EP",
+      "identifier": "ep13",
+      "albumProductionType": "http://schema.org/StudioAlbum",
+      "albumReleaseType": "http://schema.org/EPRelease",
+      "datePublished": "2025-06",
+      "genre": ["Electronic", "Ambient"],
+      "byArtist": {
+        "@type": "MusicGroup",
+        "name": "Cyjet"
+      },
+      "image": "https://cyjet.online/images/ep13 inland-sea 1200x1200.jpg",
+      "sameAs": [
+        "https://cyjet.bandcamp.com/album/inland-sea",
+        "https://open.spotify.com/album/14awnNHwDK1NZ2ZBc0IqIq",
+        "https://geo.music.apple.com/album/inland-sea-ep/1821089581",
+        "https://music.amazon.com/albums/B0FDDQTT34",
+        "https://www.deezer.com/album/773642601",
+        "http://www.tidal.com/album/442523395"
+      ],
+      "track": [
+        {
+          "@type": "MusicRecording",
+          "name": "Refracted",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "inland sea"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Moongazer",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "inland sea"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "By the time you hear this",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "inland sea"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Translucent",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "inland sea"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Suddenly, Nothing",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "inland sea"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Mauveine",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "inland sea"}
+        }
+      ]
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://cyjet.online/releases/ep12",
+      "name": "polyform",
+      "alternateName": "Polyform EP",
+      "identifier": "ep12",
+      "albumProductionType": "http://schema.org/StudioAlbum",
+      "albumReleaseType": "http://schema.org/EPRelease",
+      "datePublished": "2025-03",
+      "genre": ["Electronic", "Ambient"],
+      "byArtist": {
+        "@type": "MusicGroup",
+        "name": "Cyjet"
+      },
+      "image": "https://cyjet.online/images/ep12 polyform 1200x1200.jpg",
+      "sameAs": [
+        "https://cyjet.bandcamp.com/album/polyform",
+        "https://open.spotify.com/album/5yjOGAenDWZ94KzMhp98Xj",
+        "https://geo.music.apple.com/album/polyform-ep/1804196601",
+        "https://music.amazon.com/albums/B0F2BYQZLP",
+        "https://www.deezer.com/album/732342371",
+        "http://www.tidal.com/album/426003865"
+      ],
+      "track": [
+        {
+          "@type": "MusicRecording",
+          "name": "Infliction",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "polyform"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Zoned Out",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "polyform"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Transfinite",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "polyform"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Londeth (by misadventure)",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "polyform"}
+        }
+      ]
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://cyjet.online/releases/ep11",
+      "name": "datasight",
+      "alternateName": "Datasight EP",
+      "identifier": "ep11",
+      "albumProductionType": "http://schema.org/StudioAlbum",
+      "albumReleaseType": "http://schema.org/EPRelease",
+      "datePublished": "2024-11",
+      "genre": ["Electronic", "Ambient"],
+      "byArtist": {
+        "@type": "MusicGroup",
+        "name": "Cyjet"
+      },
+      "image": "https://cyjet.online/images/ep11 datasight 1500x1500.jpg",
+      "sameAs": [
+        "https://cyjet.bandcamp.com/album/datasight",
+        "https://open.spotify.com/album/1iJ1EOm8TgJK7lQQRbEcDy",
+        "https://music.apple.com/us/album/datasight-ep/1778979357",
+        "https://music.amazon.com/albums/B0DMMNHF95",
+        "https://www.deezer.com/album/668372221"
+      ],
+      "track": [
+        {
+          "@type": "MusicRecording",
+          "name": "Prism",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "datasight"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Ocean Motion",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "datasight"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Chondrite",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "datasight"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Deep Web",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "datasight"}
+        }
+      ]
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://cyjet.online/releases/ep10",
+      "name": "assemblage",
+      "alternateName": "Assemblage EP",
+      "identifier": "ep10",
+      "albumProductionType": "http://schema.org/StudioAlbum",
+      "albumReleaseType": "http://schema.org/EPRelease",
+      "datePublished": "2024-08",
+      "genre": ["Electronic", "Ambient"],
+      "byArtist": {
+        "@type": "MusicGroup",
+        "name": "Cyjet"
+      },
+      "image": "https://cyjet.online/images/ep10 assemblage 1024x1024.jpg",
+      "sameAs": [
+        "https://cyjet.bandcamp.com/album/assemblage",
+        "https://open.spotify.com/album/7J5zn4vqJLQK2SQ236Gj2S",
+        "https://music.apple.com/us/album/assemblage-ep/1763489361",
+        "https://music.amazon.com/albums/B0DDHBQRLB",
+        "https://www.deezer.com/album/631190451"
+      ],
+      "track": [
+        {
+          "@type": "MusicRecording",
+          "name": "Indicator",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "assemblage"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Burning Tree",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "assemblage"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Orenea",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "assemblage"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Ethera",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "assemblage"}
+        }
+      ]
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://cyjet.online/releases/ep09",
+      "name": "tidal forms",
+      "alternateName": "Tidal Forms EP",
+      "identifier": "ep09",
+      "albumProductionType": "http://schema.org/StudioAlbum",
+      "albumReleaseType": "http://schema.org/EPRelease",
+      "datePublished": "2024-05",
+      "genre": ["Electronic", "Ambient"],
+      "byArtist": {
+        "@type": "MusicGroup",
+        "name": "Cyjet"
+      },
+      "image": "https://cyjet.online/images/ep09 tidal forms 1024x1024.jpg",
+      "sameAs": [
+        "https://cyjet.bandcamp.com/album/tidal-forms",
+        "https://open.spotify.com/album/4uqstauoaZi7vaXKyfVLVn",
+        "https://music.apple.com/jp/album/tidal-forms-ep/1748353310",
+        "https://music.amazon.com.au/albums/B0D57S6H1D"
+      ],
+      "track": [
+        {
+          "@type": "MusicRecording",
+          "name": "Mash",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "tidal forms"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Memory",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "tidal forms"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Darius",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "tidal forms"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Where to begin?",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "tidal forms"}
+        }
+      ]
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://cyjet.online/releases/ep08",
+      "name": "dead north",
+      "alternateName": "Dead North EP",
+      "identifier": "ep08",
+      "albumProductionType": "http://schema.org/StudioAlbum",
+      "albumReleaseType": "http://schema.org/EPRelease",
+      "datePublished": "2024-02",
+      "genre": ["Electronic", "Ambient"],
+      "byArtist": {
+        "@type": "MusicGroup",
+        "name": "Cyjet"
+      },
+      "image": "https://cyjet.online/images/ep08 dead-north 1024x1024.jpg",
+      "sameAs": [
+        "https://cyjet.bandcamp.com/album/dead-north",
+        "https://open.spotify.com/album/5zgWTkoQSpnEymwVsY5iMi",
+        "https://geo.music.apple.com/album/dead-north-ep/1733094270",
+        "https://music.amazon.com/albums/B0CWJMFQ2W"
+      ],
+      "track": [
+        {
+          "@type": "MusicRecording",
+          "name": "Overheard",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "dead north"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Triphex",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "dead north"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Layer",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "dead north"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Arodove",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "dead north"}
+        }
+      ]
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://cyjet.online/releases/ep07",
+      "name": "switch break",
+      "alternateName": "Switch Break EP",
+      "identifier": "ep07",
+      "albumProductionType": "http://schema.org/StudioAlbum",
+      "albumReleaseType": "http://schema.org/EPRelease",
+      "datePublished": "2023-12",
+      "genre": ["Electronic", "Ambient"],
+      "byArtist": {
+        "@type": "MusicGroup",
+        "name": "Cyjet"
+      },
+      "image": "https://cyjet.online/images/ep07 switch-break 1024x1024.jpg",
+      "sameAs": [
+        "https://cyjet.bandcamp.com/album/switch-break",
+        "https://open.spotify.com/album/0kVMqplY6WADOs853XmvLG",
+        "https://music.apple.com/us/album/switch-break-ep/1720999334",
+        "https://music.amazon.com.au/albums/B0CQ2QNTG4"
+      ],
+      "track": [
+        {
+          "@type": "MusicRecording",
+          "name": "Desert Shift",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "switch break"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Olivine",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "switch break"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Diana Flats, 1932",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "switch break"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Zone Block",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "switch break"}
+        }
+      ]
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://cyjet.online/releases/ep06",
+      "name": "light chaser",
+      "alternateName": "Light Chaser EP",
+      "identifier": "ep06",
+      "albumProductionType": "http://schema.org/StudioAlbum",
+      "albumReleaseType": "http://schema.org/EPRelease",
+      "datePublished": "2023-08",
+      "genre": ["Electronic", "Ambient"],
+      "byArtist": {
+        "@type": "MusicGroup",
+        "name": "Cyjet"
+      },
+      "image": "https://cyjet.online/images/ep06 light-chaser 1024x1024.jpg",
+      "sameAs": [
+        "https://cyjet.bandcamp.com/album/light-chaser",
+        "https://open.spotify.com/album/1IyaT7G1eO1sXqpvMdgVEW",
+        "https://music.apple.com/us/album/light-chaser-ep/1704877693",
+        "https://music.amazon.com/albums/B0CGVTNVSR"
+      ],
+      "track": [
+        {
+          "@type": "MusicRecording",
+          "name": "Versoix",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "light chaser"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Leftstep",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "light chaser"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Wanda in Christmas",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "light chaser"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Dovetail",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "light chaser"}
+        }
+      ]
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://cyjet.online/releases/ep05",
+      "name": "dark lands",
+      "alternateName": "Dark Lands EP",
+      "identifier": "ep05",
+      "albumProductionType": "http://schema.org/StudioAlbum",
+      "albumReleaseType": "http://schema.org/EPRelease",
+      "datePublished": "2023-06",
+      "genre": ["Electronic", "Ambient"],
+      "byArtist": {
+        "@type": "MusicGroup",
+        "name": "Cyjet"
+      },
+      "image": "https://cyjet.online/images/ep05 dark-lands 1024x1024.jpg",
+      "sameAs": [
+        "https://cyjet.bandcamp.com/album/dark-lands",
+        "https://open.spotify.com/album/2megbRNMYGnJD9IzB4TqXq",
+        "https://geo.music.apple.com/album/dark-lands-ep/1693368775",
+        "https://music.amazon.com/albums/B0C8PQS17N"
+      ],
+      "track": [
+        {
+          "@type": "MusicRecording",
+          "name": "Zzent",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "dark lands"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Threadhead",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "dark lands"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Elastic",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "dark lands"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Problem Child",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "dark lands"}
+        }
+      ]
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://cyjet.online/releases/ep04",
+      "name": "neon ride",
+      "alternateName": "Neon Ride EP",
+      "identifier": "ep04",
+      "albumProductionType": "http://schema.org/StudioAlbum",
+      "albumReleaseType": "http://schema.org/EPRelease",
+      "datePublished": "2023-04",
+      "genre": ["Electronic", "Ambient"],
+      "byArtist": {
+        "@type": "MusicGroup",
+        "name": "Cyjet"
+      },
+      "image": "https://cyjet.online/images/ep04 neon-ride 1024x1024.jpg",
+      "sameAs": [
+        "https://cyjet.bandcamp.com/album/neon-ride",
+        "https://open.spotify.com/album/5EjvQurRjUUJLJWcSCSlhp",
+        "https://music.apple.com/au/album/neon-ride-ep/1682262897",
+        "https://music.amazon.com/albums/B0C2D5R8GM"
+      ],
+      "track": [
+        {
+          "@type": "MusicRecording",
+          "name": "No-one Else Around",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "neon ride"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Sexkontakt",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "neon ride"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Fluorescence",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "neon ride"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "As Colours Edge",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "neon ride"}
+        }
+      ]
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://cyjet.online/releases/ep03",
+      "name": "scan lines",
+      "alternateName": "Scan Lines EP",
+      "identifier": "ep03",
+      "albumProductionType": "http://schema.org/StudioAlbum",
+      "albumReleaseType": "http://schema.org/EPRelease",
+      "datePublished": "2023-03",
+      "genre": ["Electronic", "Ambient"],
+      "byArtist": {
+        "@type": "MusicGroup",
+        "name": "Cyjet"
+      },
+      "image": "https://cyjet.online/images/ep03 scan-lines 1024x1024.jpg",
+      "sameAs": [
+        "https://cyjet.bandcamp.com/album/scan-lines",
+        "https://open.spotify.com/album/6mW2yAqITqCMA8Oo60gIbk",
+        "https://geo.music.apple.com/album/scan-lines-ep/1675167080",
+        "https://music.amazon.com/albums/B0BX8ZGDDH"
+      ],
+      "track": [
+        {
+          "@type": "MusicRecording",
+          "name": "Servolex",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "scan lines"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Cube",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "scan lines"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Coma Trip",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "scan lines"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Snow at Easter",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "scan lines"}
+        }
+      ]
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://cyjet.online/releases/ep02",
+      "name": "cargo cult",
+      "alternateName": "Cargo Cult EP",
+      "identifier": "ep02",
+      "albumProductionType": "http://schema.org/StudioAlbum",
+      "albumReleaseType": "http://schema.org/EPRelease",
+      "datePublished": "2022-11",
+      "genre": ["Electronic", "Ambient"],
+      "byArtist": {
+        "@type": "MusicGroup",
+        "name": "Cyjet"
+      },
+      "image": "https://cyjet.online/images/ep02 cargo-cult 1500x1500.jpg",
+      "sameAs": [
+        "https://cyjet.bandcamp.com/album/cargo-cult",
+        "https://open.spotify.com/album/65f26Ij2tWTVeGfBn67zQi",
+        "https://geo.music.apple.com/album/cargo-cult-ep/1658040968",
+        "https://music.amazon.com/albums/B0BP2RV7LG"
+      ],
+      "track": [
+        {
+          "@type": "MusicRecording",
+          "name": "Gamboge",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "cargo cult"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Londeth",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "cargo cult"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Shades of January",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "cargo cult"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Do You Love?",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "cargo cult"}
+        }
+      ]
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://cyjet.online/releases/ep01",
+      "name": "dust craft",
+      "alternateName": "Dust Craft EP",
+      "identifier": "ep01",
+      "albumProductionType": "http://schema.org/StudioAlbum",
+      "albumReleaseType": "http://schema.org/EPRelease",
+      "datePublished": "2022-10",
+      "genre": ["Electronic", "Ambient"],
+      "byArtist": {
+        "@type": "MusicGroup",
+        "name": "Cyjet"
+      },
+      "image": "https://cyjet.online/images/ep01 dust-craft 1500x1500.jpg",
+      "sameAs": [
+        "https://cyjet.bandcamp.com/album/dust-craft",
+        "https://open.spotify.com/album/2zYz71mHvjHZe3SsUcf1Dr",
+        "https://geo.music.apple.com/album/dust-craft-ep/1653157543",
+        "https://music.amazon.com/albums/B0BLHY5LPQ"
+      ],
+      "track": [
+        {
+          "@type": "MusicRecording",
+          "name": "Angel Deep",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "dust craft"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Occultation",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "dust craft"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Distant Touch",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "dust craft"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Metal City Dub",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "dust craft"}
+        }
+      ]
+    }
+  ]
+}
