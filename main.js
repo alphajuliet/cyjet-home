@@ -2,8 +2,8 @@
 // AndrewJ, created 2018-05-06
 //-------------------
 
-// Declare to prevent warnings when using these pre-defined prefixes
-var R, ga;
+// Import specific Ramda functions
+import { curry, join, reduce } from 'https://cdn.skypack.dev/ramda';
 
 // Utilities
 
@@ -44,19 +44,19 @@ const Cyjet = (() => {
     }
   };
 
-  const renderLink = R.curry((target, link) => {
+  const renderLink = curry((target, link) => {
     appendTo(target, `<a class="link" href="${link.href}">${link.site}</a>`);
     return target;
   });
 
-  const renderRelease = R.curry((target, release) => {
+  const renderRelease = curry((target, release) => {
     const releaseElement = createElement(`
             <div class="release">
               <img class="image" src="${release.cover_image}"/>
               <div class="release-info">
                 <div class="title">${release.title}</div>
                 <div class="releaseText">${release.id} | ${release.releaseText}</div>
-                <div class="tracks">📂 ${R.join(" | ", release.trackList)}</div>
+                <div class="tracks">📂 ${join(" | ", release.trackList)}</div>
                 <div class="links">🎧 </div>
               </div>
             </div>
@@ -75,7 +75,7 @@ const Cyjet = (() => {
   const initialise = () => {
     Info.appendTitleTo(".header");
     Info.appendVersionDateTo("#attribution");
-    R.reduce(renderRelease, "#releases", MyReleases);
+    reduce(renderRelease, "#releases", MyReleases);
     console.log("Initialised.");
   };
 
@@ -84,5 +84,10 @@ const Cyjet = (() => {
     initialise: initialise
   });
 })();
+
+// Initialize when DOM is loaded
+document.addEventListener("DOMContentLoaded", () => {
+  Cyjet.initialise();
+});
 
 // The End
