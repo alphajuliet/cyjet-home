@@ -48,36 +48,54 @@
         {
           "@type": "MusicRecording",
           "name": "Refracted",
+          "position": 1,
+          "duration": "PT4M44S",
+          "isrcCode": "CAGOO2595566",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "inland sea"}
         },
         {
           "@type": "MusicRecording",
           "name": "Moongazer",
+          "position": 2,
+          "duration": "PT5M33S",
+          "isrcCode": "CAGOO2595565",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "inland sea"}
         },
         {
           "@type": "MusicRecording",
           "name": "By the time you hear this",
+          "position": 3,
+          "duration": "PT6M34S",
+          "isrcCode": "CAGOO2595563",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "inland sea"}
         },
         {
           "@type": "MusicRecording",
           "name": "Translucent",
+          "position": 4,
+          "duration": "PT3M41S",
+          "isrcCode": "CAGOO2595562",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "inland sea"}
         },
         {
           "@type": "MusicRecording",
           "name": "Suddenly, Nothing",
+          "position": 5,
+          "duration": "PT3M41S",
+          "isrcCode": "CAGOO2595560",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "inland sea"}
         },
         {
           "@type": "MusicRecording",
           "name": "Mauveine",
+          "position": 6,
+          "duration": "PT4M5S",
+          "isrcCode": "CAGOO2595559",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "inland sea"}
         }
@@ -110,24 +128,36 @@
         {
           "@type": "MusicRecording",
           "name": "Infliction",
+          "position": 1,
+          "duration": "PT8M8S",
+          "isrcCode": "CAENV2503743",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "polyform"}
         },
         {
           "@type": "MusicRecording",
           "name": "Zoned Out",
+          "position": 2,
+          "duration": "PT6M26S",
+          "isrcCode": "CAENV2503744",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "polyform"}
         },
         {
           "@type": "MusicRecording",
           "name": "Transfinite",
+          "position": 3,
+          "duration": "PT5M29S",
+          "isrcCode": "CAENV2503745",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "polyform"}
         },
         {
           "@type": "MusicRecording",
           "name": "Londeth (by misadventure)",
+          "position": 4,
+          "duration": "PT6M24S",
+          "isrcCode": "CAENV2503746",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "polyform"}
         }
@@ -159,24 +189,36 @@
         {
           "@type": "MusicRecording",
           "name": "Prism",
+          "position": 1,
+          "duration": "PT6M50S",
+          "isrcCode": "CBEYJ2419667",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "datasight"}
         },
         {
           "@type": "MusicRecording",
           "name": "Ocean Motion",
+          "position": 2,
+          "duration": "PT4M56S",
+          "isrcCode": "CBEYJ2419678",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "datasight"}
         },
         {
           "@type": "MusicRecording",
           "name": "Chondrite",
+          "position": 3,
+          "duration": "PT6M16S",
+          "isrcCode": "CBEYJ2419681",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "datasight"}
         },
         {
           "@type": "MusicRecording",
           "name": "Deep Web",
+          "position": 4,
+          "duration": "PT6M43S",
+          "isrcCode": "CBEYJ2419690",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "datasight"}
         }
@@ -208,24 +250,36 @@
         {
           "@type": "MusicRecording",
           "name": "Indicator",
+          "position": 1,
+          "duration": "PT6M42S",
+          "isrcCode": "CAGOO2451140",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "assemblage"}
         },
         {
           "@type": "MusicRecording",
           "name": "Burning Tree",
+          "position": 2,
+          "duration": "PT5M37S",
+          "isrcCode": "CAGOO2451146",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "assemblage"}
         },
         {
           "@type": "MusicRecording",
           "name": "Orenea",
+          "position": 3,
+          "duration": "PT5M17S",
+          "isrcCode": "CAGOO2451147",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "assemblage"}
         },
         {
           "@type": "MusicRecording",
           "name": "Ethera",
+          "position": 4,
+          "duration": "PT5M32S",
+          "isrcCode": "CAGOO2451148",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "assemblage"}
         }
@@ -256,24 +310,36 @@
         {
           "@type": "MusicRecording",
           "name": "Mash",
+          "position": 1,
+          "duration": "PT5M13S",
+          "isrcCode": "CAENV2418173",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "tidal forms"}
         },
         {
           "@type": "MusicRecording",
           "name": "Memory",
+          "position": 2,
+          "duration": "PT6M27S",
+          "isrcCode": "CAENV2418174",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "tidal forms"}
         },
         {
           "@type": "MusicRecording",
           "name": "Darius",
+          "position": 3,
+          "duration": "PT3M24S",
+          "isrcCode": "CAENV2418175",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "tidal forms"}
         },
         {
           "@type": "MusicRecording",
           "name": "Where to begin?",
+          "position": 4,
+          "duration": "PT4M29S",
+          "isrcCode": "CAENV2418176",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "tidal forms"}
         }
@@ -304,24 +370,36 @@
         {
           "@type": "MusicRecording",
           "name": "Overheard",
+          "position": 1,
+          "duration": "PT6M27S",
+          "isrcCode": "CAHQJ2452313",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "dead north"}
         },
         {
           "@type": "MusicRecording",
           "name": "Triphex",
+          "position": 2,
+          "duration": "PT6M55S",
+          "isrcCode": "CAHQJ2452314",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "dead north"}
         },
         {
           "@type": "MusicRecording",
           "name": "Layer",
+          "position": 3,
+          "duration": "PT5M20S",
+          "isrcCode": "CAHQJ2452315",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "dead north"}
         },
         {
           "@type": "MusicRecording",
           "name": "Arodove",
+          "position": 4,
+          "duration": "PT4M53S",
+          "isrcCode": "CAHQJ2452316",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "dead north"}
         }
@@ -352,24 +430,36 @@
         {
           "@type": "MusicRecording",
           "name": "Desert Shift",
+          "position": 1,
+          "duration": "PT6M1S",
+          "isrcCode": "CAGOO2352542",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "switch break"}
         },
         {
           "@type": "MusicRecording",
           "name": "Olivine",
+          "position": 2,
+          "duration": "PT6M25S",
+          "isrcCode": "CAGOO2352543",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "switch break"}
         },
         {
           "@type": "MusicRecording",
           "name": "Diana Flats, 1932",
+          "position": 3,
+          "duration": "PT5M36S",
+          "isrcCode": "CAGOO2352544",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "switch break"}
         },
         {
           "@type": "MusicRecording",
           "name": "Zone Block",
+          "position": 4,
+          "duration": "PT7M15S",
+          "isrcCode": "CAGOO2352545",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "switch break"}
         }
@@ -400,24 +490,36 @@
         {
           "@type": "MusicRecording",
           "name": "Versoix",
+          "position": 1,
+          "duration": "PT6M17S",
+          "isrcCode": "CAENV2323930",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "light chaser"}
         },
         {
           "@type": "MusicRecording",
           "name": "Leftstep",
+          "position": 2,
+          "duration": "PT6M27S",
+          "isrcCode": "CAENV2323931",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "light chaser"}
         },
         {
           "@type": "MusicRecording",
           "name": "Wanda in Christmas",
+          "position": 3,
+          "duration": "PT4M4S",
+          "isrcCode": "CAENV2323932",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "light chaser"}
         },
         {
           "@type": "MusicRecording",
           "name": "Dovetail",
+          "position": 4,
+          "duration": "PT6M19S",
+          "isrcCode": "CAENV2323933",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "light chaser"}
         }
@@ -448,24 +550,36 @@
         {
           "@type": "MusicRecording",
           "name": "Zzent",
+          "position": 1,
+          "duration": "PT4M15S",
+          "isrcCode": "CACWV2351818",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "dark lands"}
         },
         {
           "@type": "MusicRecording",
           "name": "Threadhead",
+          "position": 2,
+          "duration": "PT5M44S",
+          "isrcCode": "CACWV2351817",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "dark lands"}
         },
         {
           "@type": "MusicRecording",
           "name": "Elastic",
+          "position": 3,
+          "duration": "PT6M42S",
+          "isrcCode": "CACWV2351816",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "dark lands"}
         },
         {
           "@type": "MusicRecording",
           "name": "Problem Child",
+          "position": 4,
+          "duration": "PT4M16S",
+          "isrcCode": "CACWV2351815",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "dark lands"}
         }
@@ -496,24 +610,36 @@
         {
           "@type": "MusicRecording",
           "name": "No-one Else Around",
+          "position": 1,
+          "duration": "PT5M27S",
+          "isrcCode": "CAHQJ2382075",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "neon ride"}
         },
         {
           "@type": "MusicRecording",
           "name": "Sexkontakt",
+          "position": 2,
+          "duration": "PT5M32S",
+          "isrcCode": "CAHQJ2382076",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "neon ride"}
         },
         {
           "@type": "MusicRecording",
           "name": "Fluorescence",
+          "position": 3,
+          "duration": "PT5M10S",
+          "isrcCode": "CAHQJ2382077",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "neon ride"}
         },
         {
           "@type": "MusicRecording",
           "name": "As Colours Edge",
+          "position": 4,
+          "duration": "PT5M50S",
+          "isrcCode": "CAHQJ2382078",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "neon ride"}
         }
@@ -544,24 +670,36 @@
         {
           "@type": "MusicRecording",
           "name": "Servolex",
+          "position": 1,
+          "duration": "PT5M19S",
+          "isrcCode": "CAHQJ2352641",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "scan lines"}
         },
         {
           "@type": "MusicRecording",
           "name": "Cube",
+          "position": 2,
+          "duration": "PT5M37S",
+          "isrcCode": "CAHQJ2352640",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "scan lines"}
         },
         {
           "@type": "MusicRecording",
           "name": "Coma Trip",
+          "position": 3,
+          "duration": "PT6M16S",
+          "isrcCode": "CAHQJ2352639",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "scan lines"}
         },
         {
           "@type": "MusicRecording",
           "name": "Snow at Easter",
+          "position": 4,
+          "duration": "PT4M47S",
+          "isrcCode": "CAHQJ2352642",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "scan lines"}
         }
@@ -592,24 +730,36 @@
         {
           "@type": "MusicRecording",
           "name": "Gamboge",
+          "position": 1,
+          "duration": "PT6M4S",
+          "isrcCode": "CAGOO2201133",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "cargo cult"}
         },
         {
           "@type": "MusicRecording",
           "name": "Londeth",
+          "position": 2,
+          "duration": "PT6M6S",
+          "isrcCode": "CAGOO2200256",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "cargo cult"}
         },
         {
           "@type": "MusicRecording",
           "name": "Shades of January",
+          "position": 3,
+          "duration": "PT5M34S",
+          "isrcCode": "CAGOO2204169",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "cargo cult"}
         },
         {
           "@type": "MusicRecording",
           "name": "Do You Love?",
+          "position": 4,
+          "duration": "PT6M15S",
+          "isrcCode": "CAGOO2200258",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "cargo cult"}
         }
@@ -640,24 +790,36 @@
         {
           "@type": "MusicRecording",
           "name": "Angel Deep",
+          "position": 1,
+          "duration": "PT4M4S",
+          "isrcCode": "CAENV2274750",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "dust craft"}
         },
         {
           "@type": "MusicRecording",
           "name": "Occultation",
+          "position": 2,
+          "duration": "PT5M47S",
+          "isrcCode": "CAENV2274751",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "dust craft"}
         },
         {
           "@type": "MusicRecording",
           "name": "Distant Touch",
+          "position": 3,
+          "duration": "PT4M11S",
+          "isrcCode": "CAENV2274752",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "dust craft"}
         },
         {
           "@type": "MusicRecording",
           "name": "Metal City Dub",
+          "position": 4,
+          "duration": "PT8M42S",
+          "isrcCode": "CAENV2274753",
           "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
           "inAlbum": {"@type": "MusicAlbum", "name": "dust craft"}
         }
