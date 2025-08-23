@@ -3,7 +3,7 @@
  */
 
 :root {
-  --page-bg-colour: #111122;
+  --page-bg-colour: #000011;
   --main-bg-colour: #222233;
   --bg-colour-1: #fff8ee;
   --bg-colour-2: #333344;
@@ -43,18 +43,14 @@ body {
 
 /* Cyjet title  */
 .page-title {
-  font-family: Unica One, Helvetica, Aptos, Arial, sans-serif;
+  font-family: MuseoModerno, Unica One, Helvetica, Aptos, Arial, sans-serif;
   font-weight: normal;
   font-size: 400%;
   color: var(--text-colour);
   letter-spacing: 4pt;
   margin-left: -10pt;
-  text-shadow: 5px 5px 5px var(--text-shadow-colour);
+  padding: 10pt;
   background-color: var(--page-bg-colour);
-  /* border-style: dotted; */
-  /* border-width: 0 0 0 1pt; */
-  /* border-color: #999; */
-  /* padding: 0pt 0 0 15pt; */
   width: 150%;
   display: block;
 }
@@ -74,7 +70,6 @@ body {
 .content {
   padding: 0pt 10pt;
   margin: 10pt 0pt;
-  /* height: 40vh; */
   overflow: visible;
 }
 
@@ -122,9 +117,6 @@ a {
   transition-duration: 1s;
 }
 
-.release-info:hover {
-}
-
 .releaseText {
   color: var(--info-text-colour-2);
   font-size: 90%;
@@ -148,10 +140,6 @@ a {
   display: block;
   cursor: pointer;
   margin-bottom: 10pt;
-}
-
-.title:hover {
-  /* color: var(--alt-text-colour); */
 }
 
 .links {

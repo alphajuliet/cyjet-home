@@ -35,7 +35,7 @@ const Cyjet = (() => {
     date: "2025-01-25",
     info: "Cyjet home",
     appendTitleTo: (selector) => {
-      appendTo(selector, `<span class="page-title">cyjet ◮</span>`);
+      appendTo(selector, `<span class="page-title">cyjet 𖡄</span>`);
       return selector;
     },
     appendVersionDateTo: (selector) => {
