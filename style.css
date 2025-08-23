@@ -75,7 +75,7 @@ body {
   padding: 0pt 10pt;
   margin: 10pt 0pt;
   /* height: 40vh; */
-  overflow: auto;
+  overflow: visible;
 }
 
 a {
@@ -98,7 +98,7 @@ a {
   justify-content: flex-start;
   border-radius: var(--radius);
   margin: 10pt 0pt;
-  padding: 10pt 0pt;
+  padding: 10pt 0pt 0pt 0pt;
 }
 
 .release-info {
@@ -160,17 +160,23 @@ a {
 }
 
 .image {
-  padding: 10ot 0pt;
   width: 20%;
   height: 20%;
   opacity: 0.8;
   border-radius: var(--radius);
   box-shadow: 5px 5px 5px var(--shadow-colour);
   margin-right: 10pt;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
 }
 
 .image:hover {
   opacity: 1.0;
+  transform: scale(1.8);
+  z-index: 999;
+  box-shadow: 8px 8px 15px var(--shadow-colour);
 }
 
 /* ---------------- */
@@ -189,10 +195,6 @@ a {
   opacity: 0.9;
   transition: all;
   transition-duration: 1s;
-}
-
-a {
-  color: #555;
 }
 
 /* The End */
