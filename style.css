@@ -109,6 +109,15 @@ a {
   margin: 0pt 0pt;
 }
 
+.release-detail {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.release:hover .release-detail {
+  display: block;
+}
+
 .release-info:hover {
   background-color: var(--bg-colour-2);
   transition: all;

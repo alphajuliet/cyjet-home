@@ -56,8 +56,10 @@ const Cyjet = (() => {
               <div class="release-info">
                 <div class="title">${release.title}</div>
                 <div class="releaseText">${release.id} | ${release.releaseText}</div>
-                <div class="tracks">📂 ${join(" | ", release.trackList)}</div>
-                <div class="links">🎧 </div>
+                <div class="release-detail">
+                  <div class="tracks">📂 ${join(" | ", release.trackList)}</div>
+                  <div class="links">🎧 </div>
+                </div>
               </div>
             </div>
         `);
