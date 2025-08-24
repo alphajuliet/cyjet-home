@@ -31,8 +31,8 @@ const Cyjet = (() => {
   const Info = {
     title: "cyjet",
     author: "AndrewJ",
-    version: "0.5",
-    date: "2025-01-25",
+    version: "0.6",
+    date: "2025-08-23",
     info: "Cyjet home",
     appendTitleTo: (selector) => {
       appendTo(selector, `<span class="page-title">cyjet 𖡄</span>`);
