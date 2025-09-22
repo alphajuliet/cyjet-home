@@ -3,6 +3,53 @@
 const MyReleases = [
   {
     artist: "Cyjet",
+    id: "ep14",
+    title: "wireframe",
+    cover_image: "images/ep14-wireframe 1500x1500.jpg",
+    releaseDate: "2025-09",
+    releaseText: "september 2025",
+    links: [
+      {
+        site: "All sites",
+        href: "https://artists.landr.com/cyjet-wireframe",
+      },
+      {
+        site: "Bandcamp",
+        href: "https://cyjet.bandcamp.com/",
+      },
+      {
+        site: "Spotify",
+        href: "https://open.spotify.com/album/3CIxtbFkjdFPryiT519GNY",
+      },
+      {
+        site: "YouTube Music",
+        href: "https://music.youtube.com/playlist?list=OLAK5uy_kN5yJyGdtIinZJRnxlmT81q21G5UvuN2Q",
+      },
+      {
+        site: "Apple Music",
+        href: "https://geo.music.apple.com/album/wireframe-ep/1840385550",
+      },
+      {
+        site: "iTunes",
+        href: "https://geo.music.apple.com/album/wireframe-ep/1840385550",
+      },
+      {
+        site: "Amazon Music",
+        href: "",
+      },
+      { 
+        site: "Deezer", 
+        href: "" 
+      },
+      { 
+        site: "Tidal",
+        href: ""
+      }
+    ],
+    trackList: ["Shadow Cities", "Tephyr", "Flange", "Synoptic"],
+  },
+  {
+    artist: "Cyjet",
     id: "ep13",
     title: "inland sea",
     cover_image: "images/ep13 inland-sea 1200x1200.jpg",
