@@ -15,7 +15,7 @@ const MyReleases = [
       },
       {
         site: "Bandcamp",
-        href: "https://cyjet.bandcamp.com/",
+        href: "https://cyjet.bandcamp.com/album/wireframe",
       },
       {
         site: "Spotify",
@@ -35,15 +35,15 @@ const MyReleases = [
       },
       {
         site: "Amazon Music",
-        href: "",
+        href: "https://music.amazon.com/albums/B0FRGFW1CG?ref=dm_ff_amazonmusic_3p",
       },
       { 
         site: "Deezer", 
-        href: "" 
+        href: "https://www.deezer.com/album/822874751" 
       },
       { 
         site: "Tidal",
-        href: ""
+        href: "http://www.tidal.com/album/461199216"
       }
     ],
     trackList: ["Shadow Cities", "Tephyr", "Flange", "Synoptic"],
