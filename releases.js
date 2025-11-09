@@ -3,6 +3,53 @@
 const MyReleases = [
   {
     artist: "Cyjet",
+    id: "ep15",
+    title: "sonnez sessions",
+    cover_image: "images/ep15-sonnez-sessions 1500x1500.jpg",
+    releaseDate: "2025-11",
+    releaseText: "november 2025",
+    links: [
+      {
+        site: "All sites",
+        href: "https://artists.landr.com/cyjet-sonnez-sessions",
+      },
+      {
+        site: "Bandcamp",
+        href: "https://cyjet.bandcamp.com/album/sonnez-sessions",
+      },
+      {
+        site: "Spotify",
+        href: "https://open.spotify.com/album/08kT34ZSt9xqP4fv0PSb3R",
+      },
+      {
+        site: "YouTube Music",
+        href: "https://music.youtube.com/playlist?list=OLAK5uy_lrLBfh89wnQ9WKe6fO2fHTjROfTeaACFI",
+      },
+      {
+        site: "Apple Music",
+        href: "https://music.apple.com/us/album/sonnez-sessions-ep/1851170804",
+      },
+      {
+        site: "iTunes",
+        href: "https://music.apple.com/us/album/sonnez-sessions-ep/1851170804",
+      },
+      {
+        site: "Amazon Music",
+        href: "https://music.amazon.com/albums/B0G13Z62KN",
+      },
+      { 
+        site: "Deezer", 
+        href: "https://www.deezer.com/us/album/851479622" 
+      },
+      { 
+        site: "Tidal",
+        href: "https://tidal.com/album/472081308"
+      }
+    ],
+    trackList: ["Just Testing", "Servolex (2025)", "Nervous Energy", "The Ends of Invention", "The Determinist"],
+  },
+  {
+    artist: "Cyjet",
     id: "ep14",
     title: "wireframe",
     cover_image: "images/ep14-wireframe 1500x1500.jpg",

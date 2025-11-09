@@ -3,7 +3,7 @@
 //-------------------
 
 // Import specific Ramda functions
-import { curry, join, reduce } from 'https://cdn.skypack.dev/ramda';
+import { curry, join, reduce } from 'https://cdn.skypack.dev/ramda@0.31.3';
 
 // Utilities
 
