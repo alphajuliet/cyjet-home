@@ -11,7 +11,7 @@ This is a static artist website for Cyjet, built with vanilla JavaScript and dep
 - **Frontend**: Vanilla HTML/CSS/JavaScript with functional programming approach using Ramda.js
 - **Data**: Release information stored in `releases.js` as a JavaScript array
 - **Deployment**: Cloudflare Pages (configured via `wrangler.toml`)
-- **Styling**: Custom CSS with Google Fonts (Unica One, IBM Plex Sans)
+- **Styling**: Custom CSS with Google Fonts (Megrim, IBM Plex Sans)
 
 ## Key Files
 
@@ -33,9 +33,11 @@ This project has no build system or package manager - it uses vanilla web techno
 ## Code Patterns
 
 - **Functional Programming**: Uses Ramda.js extensively with curried functions
-- **Module Pattern**: Code organized in IIFE (Cyjet namespace) with public/private separation  
+- **Module Pattern**: Code organized in IIFE (Cyjet namespace) with public/private separation
 - **DOM Utilities**: Custom `createElement` and `appendTo` helper functions
 - **Data-Driven Rendering**: Release display driven by `MyReleases` array data
+- **Grid Layout**: Releases displayed in responsive CSS grid with auto-fit columns
+- **Modal Interaction**: Clicking release images opens modal overlay with details; click to close
 
 ## Data Structure
 
