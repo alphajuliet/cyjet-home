@@ -23,6 +23,137 @@
   "album": [
     {
       "@type": "MusicAlbum",
+      "@id": "https://cyjet.online/releases/ep15",
+      "name": "sonnez sessions",
+      "alternateName": "Sonnez Sessions EP",
+      "identifier": "ep15",
+      "albumProductionType": "http://schema.org/StudioAlbum",
+      "albumReleaseType": "http://schema.org/EPRelease",
+      "datePublished": "2025-11",
+      "genre": ["Alt Rock"],
+      "byArtist": {
+        "@type": "MusicGroup",
+        "name": "Cyjet"
+      },
+      "image": "https://cyjet.online/images/ep15-sonnez-sessions 1500x1500.jpg",
+      "sameAs": [
+        "https://cyjet.bandcamp.com/album/sonnez-sessions",
+        "https://open.spotify.com/album/08kT34ZSt9xqP4fv0PSb3R",
+        "https://music.apple.com/us/album/sonnez-sessions-ep/1851170804",
+        "https://music.amazon.com/albums/B0G13Z62KN",
+        "https://music.youtube.com/playlist?list=OLAK5uy_lrLBfh89wnQ9WKe6fO2fHTjROfTeaACFI",
+        "https://tidal.com/album/472081308"
+      ],
+      "track": [
+        {
+          "@type": "MusicRecording",
+          "name": "Just Testing",
+          "position": 1,
+          "duration": "PT3M58S",
+          "isrcCode": "CBF8B2524717",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "sonnez sessions"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Servolex (2025)",
+          "position": 2,
+          "duration": "PT5M19S",
+          "isrcCode": "CBF8B2524718",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "sonnez sessions"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Nervous Energy",
+          "position": 3,
+          "duration": "PT4M21S",
+          "isrcCode": "CBF8B2524719",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "sonnez sessions"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "The Ends of Invention",
+          "position": 4,
+          "duration": "PT5M05S",
+          "isrcCode": "CBF8B2524720",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "sonnez sessions"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "The Determinist",
+          "position": 5,
+          "duration": "PT5M56S",
+          "isrcCode": "CBF8B2524721",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "sonnez sessions"}
+        }
+      ]
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://cyjet.online/releases/ep14",
+      "name": "wireframe",
+      "alternateName": "Wireframe EP",
+      "identifier": "ep15",
+      "albumProductionType": "http://schema.org/StudioAlbum",
+      "albumReleaseType": "http://schema.org/EPRelease",
+      "datePublished": "2025-09",
+      "genre": ["Electronic", "Downtempo"],
+      "byArtist": {
+        "@type": "MusicGroup",
+        "name": "Cyjet"
+      },
+      "image": "https://cyjet.online/images/ep14-wireframe 1500x1500.jpg",
+      "sameAs": [
+        "https://cyjet.bandcamp.com/album/wireframe",
+        "https://open.spotify.com/album/3CIxtbFkjdFPryiT519GNY",
+        "https://geo.music.apple.com/album/wireframe-ep/1840385550",
+        "https://music.youtube.com/playlist?list=OLAK5uy_kN5yJyGdtIinZJRnxlmT81q21G5UvuN2Q"
+      ],
+      "track": [
+        {
+          "@type": "MusicRecording",
+          "name": "Shadow Cities",
+          "position": 1,
+          "duration": "PT5M43S",
+          "isrcCode": "CBEYJ2558970",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "wireframe"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Tephyr",
+          "position": 2,
+          "duration": "PT5M24S",
+          "isrcCode": "CBEYJ2558971",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "wireframe"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Flange",
+          "position": 3,
+          "duration": "PT5M34S",
+          "isrcCode": "CBEYJ2558972",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "wireframe"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Synoptic",
+          "position": 4,
+          "duration": "PT5M44S",
+          "isrcCode": "CBEYJ2558973",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "wireframe"}
+        }
+      ]
+    },
+    {
+      "@type": "MusicAlbum",
       "@id": "https://cyjet.online/releases/ep13",
       "name": "inland sea",
       "alternateName": "Inland Sea EP",
