@@ -30,12 +30,14 @@ const appendTo = (parent, child) => {
 const Cyjet = (() => {
   const Info = {
     title: ":: cyjet",
+    subtitle: "[midtempo electronica]",
     author: "AndrewJ",
     version: "0.7",
     date: "2025-12-28",
     info: "Cyjet home",
     appendTitleTo: (selector) => {
       appendTo(selector, `<span class="page-title">${Info.title}</span>`);
+      appendTo(selector, `<span class="page-subtitle">${Info.subtitle}</span>`);
       return selector;
     },
     appendVersionDateTo: (selector) => {
@@ -54,6 +56,7 @@ const Cyjet = (() => {
             <div class="release">
               <img class="image" src="${release.cover_image}"/>
               <div class="release-info">
+                <img class="modal-image" src="${release.cover_image}"/>
                 <div class="title">${release.title}</div>
                 <div class="releaseText">${release.id} | ${release.releaseText}</div>
                 <div class="release-detail">
@@ -72,22 +75,26 @@ const Cyjet = (() => {
     return target;
   });
 
-  // Handle touch interactions for mobile devices
-  const setupTouchHandlers = () => {
-    document.addEventListener('touchstart', (e) => {
-      const releaseInfo = e.target.closest('.release-info');
-      if (releaseInfo) {
-        // Remove active state from all other release-info elements
-        document.querySelectorAll('.release-info.touch-active').forEach(el => {
-          if (el !== releaseInfo) el.classList.remove('touch-active');
+  // Handle click/touch interactions for modal
+  const setupClickHandlers = () => {
+    document.addEventListener('click', (e) => {
+      const release = e.target.closest('.release');
+      const image = e.target.closest('.image');
+
+      if (image && release) {
+        // Clicking image: close others, toggle this modal
+        document.querySelectorAll('.release.modal-active').forEach(el => {
+          if (el !== release) el.classList.remove('modal-active');
         });
-        // Toggle active state on touched release-info
-        releaseInfo.classList.toggle('touch-active');
+        release.classList.toggle('modal-active');
         e.preventDefault();
+      } else if (release && release.classList.contains('modal-active')) {
+        // Clicking inside open modal (release-info): close it
+        release.classList.remove('modal-active');
       } else {
-        // Touched outside any release-info, remove all active states
-        document.querySelectorAll('.release-info.touch-active').forEach(el => {
-          el.classList.remove('touch-active');
+        // Clicking outside: close all modals
+        document.querySelectorAll('.release.modal-active').forEach(el => {
+          el.classList.remove('modal-active');
         });
       }
     });
@@ -99,7 +106,7 @@ const Cyjet = (() => {
     Info.appendTitleTo(".header");
     Info.appendVersionDateTo("#attribution");
     reduce(renderRelease, "#releases", MyReleases);
-    setupTouchHandlers();
+    setupClickHandlers();
     console.log("Initialised.");
   };
 
