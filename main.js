@@ -29,13 +29,13 @@ const appendTo = (parent, child) => {
 
 const Cyjet = (() => {
   const Info = {
-    title: "cyjet",
+    title: ":: cyjet",
     author: "AndrewJ",
-    version: "0.6",
-    date: "2025-08-23",
+    version: "0.7",
+    date: "2025-12-28",
     info: "Cyjet home",
     appendTitleTo: (selector) => {
-      appendTo(selector, `<span class="page-title">cyjet 𖡄</span>`);
+      appendTo(selector, `<span class="page-title">${Info.title}</span>`);
       return selector;
     },
     appendVersionDateTo: (selector) => {
