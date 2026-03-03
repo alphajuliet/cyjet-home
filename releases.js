@@ -3,6 +3,53 @@
 const MyReleases = [
   {
     artist: "Cyjet",
+    id: "ep16",
+    title: "foreground",
+    cover_image: "images/ep16-foreground-1500x1500.jpg",
+    releaseDate: "2026-03",
+    releaseText: "march 2026",
+    links: [
+      {
+        site: "All sites",
+        href: "https://artists.landr.com/cyjet-foreground",
+      },
+      {
+        site: "Bandcamp",
+        href: "https://cyjet.bandcamp.com/album/foreground",
+      },
+      {
+        site: "Spotify",
+        href: "https://open.spotify.com/album/0tqA6FTdjNBkpf3I09P0Wv",
+      },
+      {
+        site: "YouTube Music",
+        href: "https://music.youtube.com/playlist?list=OLAK5uy_mNJi59Z9qR8KuxrCo-rOlYjCBo5oMPpUw",
+      },
+      {
+        site: "Apple Music",
+        href: "https://geo.music.apple.com/album/foreground-ep/1881203241",
+      },
+      {
+        site: "iTunes",
+        href: "https://geo.music.apple.com/album/foreground-ep/1881203241",
+      },
+      {
+        site: "Amazon Music",
+        href: "https://music.amazon.com/albums/B0GQQ4CNVM?ref=dm_ff_amazonmusic_3p",
+      },
+      { 
+        site: "Deezer", 
+        href: "https://www.deezer.com/album/929803161" 
+      },
+      { 
+        site: "Tidal",
+        href: "http://www.tidal.com/album/503248995"
+      }
+    ],
+    trackList: ["Are we there?", "Leysse", "Moonrise", "Snowfall", "Sesare"],
+  },
+  {
+    artist: "Cyjet",
     id: "ep15",
     title: "sonnez sessions",
     cover_image: "images/ep15-sonnez-sessions 1500x1500.jpg",
