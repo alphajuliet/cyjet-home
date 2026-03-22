@@ -148,7 +148,7 @@ a {
 
 .release.modal-active .modal-image {
   display: block;
-  width: 120px;
+  width: 300px;
   border-radius: var(--radius);
   margin-bottom: 10pt;
 }
