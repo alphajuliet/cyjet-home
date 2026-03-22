@@ -103,7 +103,7 @@ const Cyjet = (() => {
   // -------------------
   // Initialise the page with content
   const initialise = () => {
-    Info.appendTitleTo(".header");
+    Info.appendTitleTo("header");
     Info.appendVersionDateTo("#attribution");
     reduce(renderRelease, "#releases", MyReleases);
     setupClickHandlers();

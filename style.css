@@ -42,6 +42,10 @@ body {
 }
 
 /* Cyjet title  */
+h1 {
+  display: none;
+}
+
 .page-title {
   font-family: Megrim, Roboto, sans-serif;
   font-weight: normal;
