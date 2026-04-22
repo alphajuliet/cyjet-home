@@ -1,62 +1,639 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>cyjet ::</title>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>cyjet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Cyjet - Electronic music producer from Sydney, Australia. Explore ambient, techno, and downtempo releases spanning over a decade of sonic exploration.">
     <meta name="keywords" content="Cyjet, electronic music, ambient, techno, downtempo, Australian electronic music, music producer, Sydney">
     <meta name="author" content="AndrewJ">
     <meta name="robots" content="index, follow">
     <meta name="data-source" content="releases.js" data-description="Contains releases data for the application." />
-    <link rel="alternate" type="application/ld+json" href="releases-schema.json" title="Cyjet Music Releases - Structured Data" />
-
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Syne">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=MuseoModerno">
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Unica One"> -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Megrim">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans">
-    <link rel="stylesheet" href="style.css">
-    <!-- <link rel="icon" href=""> -->
-    <!-- <link rel="apple-touch-icon" href="images/cyjet-icon.png"> -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
-    <!-- import the webpage's javascript file -->
+    <link rel="alternate" type="application/ld+json" href="releases-schema.json" title="Cyjet Music Releases - Structured Data" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
     <script src="releases.js"></script>
-    <script type="module" src="main.js" defer></script>
-  </head>
-  <body>
+    <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: #0c0b14;
+      color: rgba(255,255,255,0.82);
+      font-family: 'IBM Plex Sans', sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    :root {
+      --accent: oklch(65% 0.18 285);
+      --accent-dim: oklch(65% 0.18 285 / 0.25);
+      --accent-subtle: oklch(65% 0.18 285 / 0.12);
+      --bg: #0c0b14;
+      --bg2: #12101e;
+      --bg3: #1a1828;
+      --text: rgba(255,255,255,0.85);
+      --text-dim: rgba(255,255,255,0.45);
+      --text-muted: rgba(255,255,255,0.25);
+      --border: rgba(255,255,255,0.07);
+      --gap: 5px;
+    }
+    /* scrollbar */
+* { scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.1) transparent; }
+*::-webkit-scrollbar { width: 4px; }
+*::-webkit-scrollbar-track { background: transparent; }
+*::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 2px; }
+</style>
+</head>
+<body>
+<div id="root"></div>
 
-    <div class="container">
+<script type="text/babel">
 
-      <header>
-        <img id="logo"
-             src=""
-             alt="[cyjet]"/>
-        <h1>cyjet</h1>
-      </header>
+// ─── map MyReleases (releases.js) → component format ─────────
+// To add a new release: prepend an entry to MyReleases in releases.js.
+// The first entry is always treated as the latest/hero release.
+const SITE_KEY_MAP = {
+  'all sites':     'all',
+  'bandcamp':      'bandcamp',
+  'spotify':       'spotify',
+  'youtube music': 'youtube',
+  'apple music':   'apple',
+  'itunes':        'apple',   // merge iTunes into apple
+  'amazon music':  'amazon',
+  'deezer':        'deezer',
+  'tidal':         'tidal',
+};
 
-      <div class="content">
-        <div id="releases"></div>
-        <footer>
-          <p id="copyright">
-            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-              <img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
-              <br />This web site content is licensed under a
-              <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Licence</a>,
-              <br />
-              <span id="attribution">
-                Hand-made by andrew. Contact: info /at/ cyjet /dot/ online.
-              </span>
-          </p>
-        </footer>
+const releases = (typeof MyReleases !== 'undefined' ? MyReleases : []).map((r, i) => {
+  const links = {};
+  (r.links || []).forEach(({ site, href }) => {
+    const key = SITE_KEY_MAP[site.toLowerCase()];
+    if (key && !links[key]) links[key] = href; // first match wins (e.g. Apple Music over iTunes)
+  });
+  // Derive episode number from id (ep16 → 16) or fall back to position
+  const n = parseInt(r.id.replace(/\D/g, ''), 10) || (window.MyReleases.length - i);
+  return {
+    id:     r.id,
+    n,
+    title:  r.title,
+    date:   r.releaseText,
+    img:    r.cover_image,
+    tracks: r.trackList || [],
+    links,
+  };
+});
+
+const latest = releases[0];
+const catalogue = releases.slice(1);
+const byId = Object.fromEntries(releases.map(r => [r.id, r]));
+
+// Build grid layouts from the catalogue (all except the hero)
+GRID_DESKTOP = buildGridLayout(catalogue, 6,
+  [[3,2,1],[2,2,2],[2,1,1,2],[1,1,2,1,1]], 230, 15);
+GRID_TABLET = buildGridLayout(catalogue, 3,
+  [[2,1],[1,2],[1,1,1]], 210, 12);
+
+// ─── platform config ────────────────────────────────────────
+const PLATFORMS = [
+  { key: 'bandcamp',  label: 'Bandcamp' },
+  { key: 'spotify',   label: 'Spotify' },
+  { key: 'apple',     label: 'Apple Music' },
+  { key: 'youtube',   label: 'YouTube Music' },
+  { key: 'amazon',    label: 'Amazon Music' },
+  { key: 'deezer',    label: 'Deezer' },
+  { key: 'tidal',     label: 'Tidal' },
+];
+
+// ─── grid layouts — generated from release count ─────────────
+// Desktop: 6-col grid. Row patterns cycle: [3,2,1], [2,2,2], [2,1,1,2], [1,1,2,1,1]
+// Tablet: 3-col grid. Row patterns cycle: [2,1], [1,2], [1,1,1]
+// Heights step down slightly from first row to last.
+
+function buildGridLayout(items, cols, rowPatterns, baseH, stepH) {
+  const result = [];
+  let itemIdx = 0;
+  let rowIdx = 0;
+  while (itemIdx < items.length) {
+    const pattern = rowPatterns[rowIdx % rowPatterns.length];
+    const h = Math.max(baseH - rowIdx * stepH, baseH - stepH * 3);
+    let col = 1;
+    for (const span of pattern) {
+      if (itemIdx >= items.length) break;
+      result.push({ id: items[itemIdx].id, col: `${col} / ${col + span}`, h });
+      col += span;
+      itemIdx++;
+    }
+    rowIdx++;
+  }
+  return result;
+}
+
+// These are computed after releases is defined (below)
+let GRID_DESKTOP, GRID_TABLET;
+
+// ─── breakpoint hook ──────────────────────────────────────────
+function useBreakpoint() {
+  const get = () => window.innerWidth >= 900 ? 'desktop' : window.innerWidth >= 560 ? 'tablet' : 'mobile';
+  const [bp, setBp] = React.useState(get);
+  React.useEffect(() => {
+    const fn = () => setBp(get());
+    window.addEventListener('resize', fn);
+    return () => window.removeEventListener('resize', fn);
+  }, []);
+  return bp;
+}
+
+// ─── Drawer ──────────────────────────────────────────────────
+function Drawer({ release: r, onClose }) {
+  const [closing, setClosing] = React.useState(false);
+
+  const close = () => {
+    setClosing(true);
+    setTimeout(onClose, 280);
+  };
+
+  React.useEffect(() => {
+    const esc = (e) => { if (e.key === 'Escape') close(); };
+    document.addEventListener('keydown', esc);
+    return () => document.removeEventListener('keydown', esc);
+  }, []);
+
+  const platformLinks = PLATFORMS.filter(p => r.links[p.key]);
+
+  return (
+    <>
+      {/* backdrop */}
+      <div onClick={close} style={{
+        position: 'fixed', inset: 0, zIndex: 40,
+        background: 'rgba(8,7,18,0.65)',
+        backdropFilter: 'blur(4px)',
+        animation: closing ? 'fadeOut 0.28s ease forwards' : 'fadeIn 0.22s ease',
+      }} />
+
+      {/* drawer panel */}
+      <div style={{
+        position: 'fixed', top: 0, right: 0, bottom: 0,
+        width: 'min(420px, 100vw)',
+        background: 'var(--bg2)',
+        borderLeft: '1px solid rgba(255,255,255,0.07)',
+        zIndex: 50,
+        display: 'flex', flexDirection: 'column',
+        overflowY: 'auto',
+        animation: closing ? 'slideOut 0.28s cubic-bezier(0.4,0,1,1) forwards' : 'slideIn 0.3s cubic-bezier(0,0,0.2,1)',
+        boxShadow: '-24px 0 60px rgba(0,0,0,0.4)',
+      }}>
+
+        {/* cover */}
+        <div style={{ position: 'relative', width: '100%', aspectRatio: '1', flexShrink: 0, overflow: 'hidden' }}>
+          <img src={r.img} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent 50%, var(--bg2) 100%)' }} />
+
+          {/* close */}
+          <button onClick={close} style={{
+            position: 'absolute', top: 14, right: 14,
+            width: 34, height: 34, borderRadius: 17,
+            background: 'rgba(0,0,0,0.5)', backdropFilter: 'blur(8px)',
+            border: '1px solid rgba(255,255,255,0.12)',
+            color: 'rgba(255,255,255,0.7)', cursor: 'pointer',
+            fontSize: 16, lineHeight: 1, display: 'flex', alignItems: 'center', justifyContent: 'center',
+            transition: 'all 0.15s',
+          }}
+          onMouseEnter={e => e.currentTarget.style.background = 'rgba(0,0,0,0.75)'}
+          onMouseLeave={e => e.currentTarget.style.background = 'rgba(0,0,0,0.5)'}
+          >✕</button>
+
+          {/* release number badge */}
+          <div style={{
+            position: 'absolute', top: 14, left: 14,
+            fontFamily: 'IBM Plex Mono', fontSize: 11,
+            color: 'var(--accent)', letterSpacing: 1,
+            background: 'rgba(0,0,0,0.5)', backdropFilter: 'blur(8px)',
+            padding: '3px 8px', borderRadius: 3,
+          }}>EP {String(r.n).padStart(2,'0')}</div>
+        </div>
+
+        {/* info */}
+        <div style={{ padding: '20px 24px 0' }}>
+          <div style={{ fontFamily: 'Space Grotesk', fontWeight: 300, fontSize: 28, lineHeight: 1.1,
+            color: 'rgba(255,255,255,0.95)', letterSpacing: -0.5, marginBottom: 4 }}>
+            {r.title}
+          </div>
+          <div style={{ fontFamily: 'IBM Plex Mono', fontSize: 12, color: 'var(--text-dim)', letterSpacing: 0.5 }}>
+            {r.date}
+          </div>
+        </div>
+
+        {/* primary CTA */}
+        <div style={{ padding: '16px 24px 0' }}>
+          <a href={r.links.all || r.links.bandcamp} target="_blank" rel="noopener" style={{
+            display: 'block', width: '100%', padding: '12px 0',
+            background: 'var(--accent)', color: '#fff',
+            fontFamily: 'Space Grotesk', fontWeight: 500, fontSize: 15,
+            textAlign: 'center', textDecoration: 'none',
+            borderRadius: 4, letterSpacing: 0.3,
+            transition: 'opacity 0.15s',
+          }}
+          onMouseEnter={e => e.currentTarget.style.opacity = '0.85'}
+          onMouseLeave={e => e.currentTarget.style.opacity = '1'}
+          >Listen now — all platforms</a>
+        </div>
+
+        {/* platform links */}
+        <div style={{ padding: '14px 24px 0' }}>
+          <div style={{ fontSize: 11, fontFamily: 'IBM Plex Mono', color: 'var(--text-muted)', letterSpacing: 2,
+            textTransform: 'uppercase', marginBottom: 10 }}>Listen on</div>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px 12px' }}>
+            {platformLinks.map(p => (
+              <a key={p.key} href={r.links[p.key]} target="_blank" rel="noopener" style={{
+                fontFamily: 'IBM Plex Sans', fontSize: 13, color: 'var(--text-dim)',
+                textDecoration: 'none', borderBottom: '1px solid rgba(255,255,255,0.12)',
+                paddingBottom: 1, transition: 'color 0.12s, border-color 0.12s',
+              }}
+              onMouseEnter={e => { e.currentTarget.style.color = 'var(--accent)'; e.currentTarget.style.borderColor = 'var(--accent)'; }}
+              onMouseLeave={e => { e.currentTarget.style.color = 'var(--text-dim)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.12)'; }}
+              >{p.label}</a>
+            ))}
+          </div>
+        </div>
+
+        {/* divider */}
+        <div style={{ margin: '16px 24px 0', borderTop: '1px solid var(--border)' }} />
+
+        {/* tracklist */}
+        <div style={{ padding: '14px 24px 32px' }}>
+          <div style={{ fontSize: 11, fontFamily: 'IBM Plex Mono', color: 'var(--text-muted)', letterSpacing: 2,
+            textTransform: 'uppercase', marginBottom: 10 }}>Tracks</div>
+          {r.tracks.map((t, i) => (
+            <a key={i} href={r.links.bandcamp} target="_blank" rel="noopener" style={{
+              display: 'flex', alignItems: 'center', gap: 14,
+              padding: '9px 0', borderBottom: '1px solid var(--border)',
+              textDecoration: 'none', cursor: 'pointer',
+              transition: 'background 0.1s',
+            }}
+            onMouseEnter={e => e.currentTarget.style.paddingLeft = '6px'}
+            onMouseLeave={e => e.currentTarget.style.paddingLeft = '0'}
+            >
+              <span style={{ fontFamily: 'IBM Plex Mono', fontSize: 11, color: 'var(--text-muted)',
+                minWidth: 20, textAlign: 'right' }}>{i + 1}</span>
+              <span style={{ fontFamily: 'IBM Plex Sans', fontWeight: 400, fontSize: 14,
+                color: 'rgba(255,255,255,0.75)', flex: 1, transition: 'color 0.12s' }}>{t}</span>
+              <span style={{ fontSize: 11, color: 'rgba(150,120,255,0.4)', opacity: 0 }}
+                className="track-arrow">▶</span>
+            </a>
+          ))}
+        </div>
+
+      </div>
+
+      <style>{`
+        @keyframes fadeIn { from { opacity: 0 } to { opacity: 1 } }
+        @keyframes fadeOut { from { opacity: 1 } to { opacity: 0 } }
+        @keyframes slideIn { from { transform: translateX(100%) } to { transform: translateX(0) } }
+        @keyframes slideOut { from { transform: translateX(0) } to { transform: translateX(100%) } }
+      `}</style>
+    </>
+  );
+}
+
+// ─── Release Tile ────────────────────────────────────────────
+function Tile({ r, gridCol, height, onClick, isMobile }) {
+  const [hov, setHov] = React.useState(false);
+  const [showInfo, setShowInfo] = React.useState(false);
+  const longPressTimer = React.useRef(null);
+  const wasLongPress = React.useRef(false);
+  const touchMoved = React.useRef(false);
+
+  const titleSize = height > 210 ? 17 : height > 190 ? 14 : 13;
+  const revealed = hov || showInfo;
+
+  const handleTouchStart = () => {
+    touchMoved.current = false;
+    wasLongPress.current = false;
+    longPressTimer.current = setTimeout(() => {
+      wasLongPress.current = true;
+      setShowInfo(true);
+    }, 480);
+  };
+
+  const handleTouchMove = () => {
+    touchMoved.current = true;
+    clearTimeout(longPressTimer.current);
+    longPressTimer.current = null;
+  };
+
+  const handleTouchEnd = () => {
+    clearTimeout(longPressTimer.current);
+    longPressTimer.current = null;
+  };
+
+  const handleClick = () => {
+    if (wasLongPress.current) {
+      wasLongPress.current = false;
+      return; // long press only reveals info, doesn't open drawer
+    }
+    setShowInfo(false);
+    onClick(r);
+  };
+
+  return (
+    <div
+      onClick={handleClick}
+      onMouseEnter={() => setHov(true)}
+      onMouseLeave={() => setHov(false)}
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
+      style={{
+        gridColumn: gridCol || undefined,
+        height, cursor: 'pointer', position: 'relative',
+        overflow: 'hidden', borderRadius: 2,
+        background: '#111',
+        userSelect: 'none', WebkitUserSelect: 'none',
+      }}
+    >
+      <img src={r.img} style={{
+        width: '100%', height: '100%', objectFit: 'cover', display: 'block',
+        transform: revealed ? 'scale(1.04)' : 'scale(1)',
+        transition: 'transform 0.45s cubic-bezier(0.2,0,0,1), filter 0.3s',
+        filter: revealed ? 'brightness(0.82)' : 'brightness(0.72)',
+        pointerEvents: 'none',
+      }} />
+
+      {/* gradient — only visible when revealed */}
+      <div style={{
+        position: 'absolute', inset: 0,
+        background: 'linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 55%)',
+        opacity: revealed ? 1 : 0,
+        transition: 'opacity 0.25s',
+        pointerEvents: 'none',
+      }} />
+
+      {/* title + date + listen btn */}
+      <div style={{
+        position: 'absolute', bottom: 0, left: 0, right: 0,
+        padding: isMobile ? '6px 8px 9px' : height > 210 ? '10px 12px 12px' : '7px 10px 9px',
+        display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between',
+        gap: 6,
+        opacity: revealed ? 1 : 0,
+        transform: revealed ? 'translateY(0)' : 'translateY(5px)',
+        transition: 'opacity 0.22s, transform 0.22s',
+        pointerEvents: 'none',
+      }}>
+        <div style={{ minWidth: 0 }}>
+          <div style={{
+            fontFamily: 'Space Grotesk', fontWeight: 400,
+            fontSize: isMobile ? 13 : titleSize,
+            color: 'rgba(255,255,255,0.95)', lineHeight: 1.15,
+            letterSpacing: -0.2,
+            overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap',
+          }}>{r.title}</div>
+          <div style={{
+            fontFamily: 'IBM Plex Mono', fontSize: 10,
+            color: 'rgba(255,255,255,0.45)', marginTop: 2,
+          }}>{r.date}</div>
+        </div>
+        {!isMobile && (
+          <div style={{
+            fontFamily: 'IBM Plex Sans', fontSize: 11, fontWeight: 500,
+            color: 'var(--accent)',
+            background: 'rgba(0,0,0,0.55)', backdropFilter: 'blur(8px)',
+            border: '1px solid rgba(150,120,255,0.3)',
+            padding: '4px 9px', borderRadius: 3,
+            whiteSpace: 'nowrap', flexShrink: 0,
+          }}>listen →</div>
+        )}
       </div>
     </div>
+  );
+}
 
-    <script src="https://button.glitch.me/button.js"></script>
-  </body>
+// ─── Hero ────────────────────────────────────────────────────
+function Hero({ r, onOpen, bp }) {
+  const [hov, setHov] = React.useState(false);
+  const heroH = bp === 'mobile' ? 260 : bp === 'tablet' ? 300 : 340;
+  const titleSize = bp === 'mobile' ? 30 : bp === 'tablet' ? 38 : 46;
+  const pad = bp === 'mobile' ? '16px 16px' : '24px 28px';
+  return (
+    <div
+      onMouseEnter={() => setHov(true)}
+      onMouseLeave={() => setHov(false)}
+      style={{ position: 'relative', width: '100%', height: heroH, overflow: 'hidden', cursor: 'pointer' }}
+      onClick={() => onOpen(r)}
+    >
+      <img src={r.img} style={{
+        width: '100%', height: '100%', objectFit: 'cover', display: 'block',
+        transform: hov ? 'scale(1.02)' : 'scale(1)',
+        transition: 'transform 0.6s cubic-bezier(0.2,0,0,1), filter 0.3s',
+        filter: hov ? 'brightness(0.65)' : 'brightness(0.5)',
+      }} />
+      <div style={{ position: 'absolute', inset: 0,
+        background: 'linear-gradient(120deg, rgba(20,10,50,0.6) 0%, rgba(8,7,18,0.4) 60%, transparent 100%)' }} />
+      <div style={{ position: 'absolute', inset: 0,
+        background: 'linear-gradient(to top, rgba(12,11,20,0.9) 0%, transparent 55%)' }} />
+
+      <div style={{ position: 'absolute', inset: 0, padding: pad,
+        display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', gap: 8 }}>
+        <div>
+          <div style={{ fontFamily: 'IBM Plex Mono', fontSize: 10, color: 'var(--accent)',
+            letterSpacing: 2, textTransform: 'uppercase', marginBottom: 5 }}>Latest release</div>
+          <div style={{ fontFamily: 'Space Grotesk', fontWeight: 300, fontSize: titleSize,
+            lineHeight: 1, color: '#fff', letterSpacing: -1 }}>{r.title}</div>
+          {bp !== 'mobile' && (
+            <div style={{ fontFamily: 'IBM Plex Mono', fontSize: 11, color: 'rgba(255,255,255,0.38)',
+              marginTop: 5, letterSpacing: 0.2 }}>
+              {r.date} · {r.tracks.length} tracks: {r.tracks.join(' · ')}
+            </div>
+          )}
+          {bp === 'mobile' && (
+            <div style={{ fontFamily: 'IBM Plex Mono', fontSize: 11, color: 'rgba(255,255,255,0.38)',
+              marginTop: 4 }}>{r.date} · {r.tracks.length} tracks</div>
+          )}
+        </div>
+        <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap', marginTop: 2 }}>
+          <a href={r.links.all} target="_blank" rel="noopener"
+            onClick={e => e.stopPropagation()}
+            style={{
+              fontFamily: 'Space Grotesk', fontWeight: 500,
+              fontSize: bp === 'mobile' ? 13 : 14,
+              color: '#fff', background: 'var(--accent)',
+              padding: bp === 'mobile' ? '8px 18px' : '9px 22px',
+              borderRadius: 4, textDecoration: 'none',
+              letterSpacing: 0.2, transition: 'opacity 0.15s', display: 'inline-block',
+            }}
+            onMouseEnter={e => e.currentTarget.style.opacity = '0.85'}
+            onMouseLeave={e => e.currentTarget.style.opacity = '1'}
+          >Listen now</a>
+          <button onClick={e => { e.stopPropagation(); onOpen(r); }} style={{
+            fontFamily: 'Space Grotesk', fontWeight: 400,
+            fontSize: bp === 'mobile' ? 13 : 14,
+            color: 'rgba(255,255,255,0.6)', background: 'transparent',
+            border: '1px solid rgba(255,255,255,0.2)',
+            padding: bp === 'mobile' ? '8px 18px' : '9px 22px',
+            borderRadius: 4, cursor: 'pointer', letterSpacing: 0.2, transition: 'all 0.15s',
+          }}
+          onMouseEnter={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.4)'; e.currentTarget.style.color = '#fff'; }}
+          onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.2)'; e.currentTarget.style.color = 'rgba(255,255,255,0.6)'; }}
+          >Tracks &amp; platforms</button>
+          {bp === 'desktop' && (
+            <div style={{ display: 'flex', gap: 8, marginLeft: 4, flexWrap: 'wrap' }}>
+              {['Bandcamp','Spotify','Apple Music'].map(name => {
+                const k2 = name === 'Apple Music' ? 'apple' : name.toLowerCase();
+                return r.links[k2] ? (
+                  <a key={name} href={r.links[k2]} target="_blank" rel="noopener"
+                    onClick={e => e.stopPropagation()}
+                    style={{ fontFamily:'IBM Plex Sans', fontSize:12, color:'rgba(255,255,255,0.38)',
+                      textDecoration:'none', borderBottom:'1px solid rgba(255,255,255,0.14)',
+                      paddingBottom:1, transition:'color 0.12s' }}
+                    onMouseEnter={e => e.currentTarget.style.color = 'rgba(255,255,255,0.8)'}
+                    onMouseLeave={e => e.currentTarget.style.color = 'rgba(255,255,255,0.38)'}
+                  >{name}</a>
+                ) : null;
+              })}
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ─── Main App ────────────────────────────────────────────────
+function App() {
+  const [drawer, setDrawer] = React.useState(null);
+  const bp = useBreakpoint();
+  const isMobile = bp === 'mobile';
+  const isTablet = bp === 'tablet';
+
+  // Pick grid config for current breakpoint
+  const gridLayout = bp === 'desktop' ? GRID_DESKTOP : bp === 'tablet' ? GRID_TABLET : null;
+  const gridCols = bp === 'desktop' ? 'repeat(6, 1fr)' : bp === 'tablet' ? 'repeat(3, 1fr)' : 'repeat(2, 1fr)';
+  const mobileH = 160; // fixed height for all mobile tiles
+
+  const navPad = isMobile ? '14px 16px' : '18px 24px 16px';
+  const aboutCols = isMobile || isTablet ? '1fr' : '1fr 2fr';
+  const sectionPad = isMobile ? '0 4px' : '0';
+
+  return (
+    <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 0 60px' }}>
+
+      {/* NAV */}
+      <nav style={{
+        display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+        padding: navPad,
+        borderBottom: '1px solid var(--border)',
+        position: 'sticky', top: 0, zIndex: 20,
+        background: 'rgba(12,11,20,0.92)', backdropFilter: 'blur(12px)',
+      }}>
+        <div style={{ fontFamily: 'Space Grotesk', fontWeight: 600,
+          fontSize: isMobile ? 19 : 22,
+          color: 'rgba(255,255,255,0.92)', letterSpacing: 3 }}>cyjet</div>
+        <div style={{ display: 'flex', gap: isMobile ? 16 : 24, alignItems: 'center' }}>
+          <a href="https://cyjet.bandcamp.com" target="_blank" rel="noopener" style={{
+            fontFamily: 'IBM Plex Sans', fontSize: 13, color: 'rgba(255,255,255,0.45)',
+            textDecoration: 'none', letterSpacing: 0.3, transition: 'color 0.12s',
+          }}
+          onMouseEnter={e => e.currentTarget.style.color = 'rgba(255,255,255,0.8)'}
+          onMouseLeave={e => e.currentTarget.style.color = 'rgba(255,255,255,0.45)'}
+          >Bandcamp</a>
+          <a href="#about" style={{
+            fontFamily: 'IBM Plex Sans', fontSize: 13, color: 'rgba(255,255,255,0.45)',
+            textDecoration: 'none', letterSpacing: 0.3, transition: 'color 0.12s',
+          }}
+          onMouseEnter={e => e.currentTarget.style.color = 'rgba(255,255,255,0.8)'}
+          onMouseLeave={e => e.currentTarget.style.color = 'rgba(255,255,255,0.45)'}
+          >About</a>
+        </div>
+      </nav>
+
+      {/* HERO — latest release */}
+      <div style={{ margin: '0 0 var(--gap)' }}>
+        <Hero r={latest} onOpen={setDrawer} bp={bp} />
+      </div>
+
+      {/* CATALOGUE GRID */}
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: gridCols,
+        gap: 'var(--gap)',
+        padding: sectionPad,
+      }}>
+        {isMobile ? (
+          // Mobile: all tiles equal size, auto-flow, no explicit placement
+          catalogue.map(r => (
+            <Tile key={r.id} r={r} height={mobileH} onClick={setDrawer} isMobile={true} />
+          ))
+        ) : (
+          // Desktop/tablet: explicit asymmetric placement
+          gridLayout.map(({ id, col, h }) => {
+            const r = byId[id];
+            return r ? (
+              <Tile key={id} r={r} gridCol={col} height={h} onClick={setDrawer} isMobile={false} />
+            ) : null;
+          })
+        )}
+      </div>
+
+      {/* ABOUT */}
+      <div id="about" style={{
+        margin: isMobile ? '40px 16px 0' : '60px 24px 0',
+        paddingTop: isMobile ? 28 : 40,
+        borderTop: '1px solid var(--border)',
+        display: 'grid',
+        gridTemplateColumns: aboutCols,
+        gap: isMobile ? 14 : 40,
+        alignItems: 'start',
+      }}>
+        <div style={{ fontFamily: 'Space Grotesk', fontWeight: 600,
+          fontSize: isMobile ? 18 : 22,
+          color: 'rgba(255,255,255,0.92)', letterSpacing: 3 }}>cyjet</div>
+        <div>
+          <p style={{ fontFamily: 'IBM Plex Sans', fontWeight: 300,
+            fontSize: isMobile ? 14 : 15,
+            lineHeight: 1.75, color: 'rgba(255,255,255,0.55)', textWrap: 'pretty' }}>
+            Electronic music from Sydney, Australia. Ambient, techno, and downtempo.
+          </p>
+          <p style={{ fontFamily: 'IBM Plex Mono', fontSize: 12, color: 'rgba(255,255,255,0.25)',
+            marginTop: 14, letterSpacing: 0.3 }}>
+            info /at/ cyjet /dot/ online
+          </p>
+        </div>
+      </div>
+
+      {/* FOOTER */}
+      <div style={{
+        margin: isMobile ? '28px 16px 0' : '40px 24px 0',
+        display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+        flexWrap: 'wrap', gap: 10,
+      }}>
+        <span style={{ fontFamily: 'IBM Plex Mono', fontSize: 11,
+          color: 'rgba(255,255,255,0.2)', letterSpacing: 0.3 }}>
+          © cyjet · CC BY-NC-SA 4.0
+        </span>
+        <div style={{ display: 'flex', gap: 16 }}>
+          {[{label:'Bandcamp', href:'https://cyjet.bandcamp.com'}, {label:'Spotify', href:'https://open.spotify.com/artist/cyjet'}].map(l => (
+            <a key={l.label} href={l.href} target="_blank" rel="noopener"
+              style={{ fontFamily:'IBM Plex Mono', fontSize:11, color:'rgba(255,255,255,0.2)', textDecoration:'none', transition:'color 0.12s' }}
+              onMouseEnter={e => e.currentTarget.style.color = 'rgba(255,255,255,0.5)'}
+              onMouseLeave={e => e.currentTarget.style.color = 'rgba(255,255,255,0.2)'}
+            >{l.label}</a>
+          ))}
+        </div>
+      </div>
+
+      {/* DRAWER */}
+      {drawer && <Drawer release={drawer} onClose={() => setDrawer(null)} />}
+
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
 </html>
