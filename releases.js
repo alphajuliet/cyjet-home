@@ -3,6 +3,53 @@
 const MyReleases = [
   {
     artist: "Cyjet",
+    id: "ep17",
+    title: "cities fold",
+    cover_image: "images/ep17-cities-fold-1500x1500.jpg",
+    releaseDate: "2026-06",
+    releaseText: "june 2026",
+    links: [
+      {
+        site: "All sites",
+        href: "https://artists.landr.com/cyjet-cities-fold",
+      },
+      {
+        site: "Bandcamp",
+        href: "https://cyjet.bandcamp.com/album/cities-fold",
+      },
+      {
+        site: "Spotify",
+        href: "https://open.spotify.com/album/3X8tXfgHQesMyPvllRF6Dc",
+      },
+      {
+        site: "YouTube Music",
+        href: "https://music.youtube.com/playlist?list=OLAK5uy_k_IJr7Kjnk2XRnYaw4EyQsclQsvQg5BxE",
+      },
+      {
+        site: "Apple Music",
+        href: "https://geo.music.apple.com/album/cities-fold-ep/6784353798",
+      },
+      {
+        site: "iTunes",
+        href: "https://geo.music.apple.com/us/album/cities-fold-ep/6784353798?l=en-US",
+      },
+      {
+        site: "Amazon Music",
+        href: "https://music.amazon.com/albums/B0H6NFHGL4?ref=dm_ff_amazonmusic_3p",
+      },
+      {
+        site: "Deezer",
+        href: "https://www.deezer.com/album/1014483971",
+      },
+      {
+        site: "Tidal",
+        href: "http://www.tidal.com/album/536843387",
+      },
+    ],
+    trackList: ["Intent", "Antiprism", "Targeted", "Istone"],
+  },
+  {
+    artist: "Cyjet",
     id: "ep16",
     title: "foreground",
     cover_image: "images/ep16-foreground-1500x1500.jpg",
