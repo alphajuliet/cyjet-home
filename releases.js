@@ -497,7 +497,7 @@ const MyReleases = [
       },
       {
         site: "YouTube Music",
-        href: "https://geo.music.apple.com/album/light-chaser-ep/1704877693",
+        href: "https://music.youtube.com/playlist?list=OLAK5uy_mCnYERARZsajQnn19QoogunA6V198ELPQ",
       },
       {
         site: "Apple Music",
@@ -505,7 +505,7 @@ const MyReleases = [
       },
       {
         site: "iTunes",
-        href: "https:geo.music.apple.com/album/light-chaser-ep/1704877693",
+        href: "https://music.apple.com/us/album/light-chaser-ep/1704877693",
       },
       {
         site: "Amazon Music",
