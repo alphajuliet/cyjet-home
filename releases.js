@@ -99,7 +99,7 @@ const MyReleases = [
     artist: "Cyjet",
     id: "ep15",
     title: "sonnez sessions",
-    cover_image: "images/ep15-sonnez-sessions 1500x1500.jpg",
+    cover_image: "images/ep15-sonnez-sessions-1500x1500.jpg",
     releaseDate: "2025-11",
     releaseText: "november 2025",
     links: [
@@ -146,7 +146,7 @@ const MyReleases = [
     artist: "Cyjet",
     id: "ep14",
     title: "wireframe",
-    cover_image: "images/ep14-wireframe 1500x1500.jpg",
+    cover_image: "images/ep14-wireframe-1500x1500.jpg",
     releaseDate: "2025-09",
     releaseText: "september 2025",
     links: [
@@ -193,7 +193,7 @@ const MyReleases = [
     artist: "Cyjet",
     id: "ep13",
     title: "inland sea",
-    cover_image: "images/ep13 inland-sea 1200x1200.jpg",
+    cover_image: "images/ep13-inland-sea-1200x1200.jpg",
     releaseDate: "2025-06",
     releaseText: "june 2025",
     links: [
@@ -240,7 +240,7 @@ const MyReleases = [
     artist: "Cyjet",
     id: "ep12",
     title: "polyform",
-    cover_image: "images/ep12 polyform 1200x1200.jpg",
+    cover_image: "images/ep12-polyform-1200x1200.jpg",
     releaseDate: "2025-03",
     releaseText: "march 2025",
     links: [
@@ -287,7 +287,7 @@ const MyReleases = [
     artist: "Cyjet",
     id: "ep11",
     title: "datasight",
-    cover_image: "images/ep11 datasight 1500x1500.jpg",
+    cover_image: "images/ep11-datasight-1500x1500.jpg",
     releaseDate: "2024-11",
     releaseText: "november 2024",
     links: [
@@ -328,7 +328,7 @@ const MyReleases = [
     artist: "Cyjet",
     id: "ep10",
     title: "assemblage",
-    cover_image: "images/ep10 assemblage 1024x1024.jpg",
+    cover_image: "images/ep10-assemblage-1024x1024.jpg",
     releaseDate: "2024-08",
     releaseText: "august 2024",
     links: [
@@ -368,7 +368,7 @@ const MyReleases = [
     artist: "Cyjet",
     id: "ep09",
     title: "tidal forms",
-    cover_image: "images/ep09 tidal forms 1024x1024.jpg",
+    cover_image: "images/ep09-tidal-forms-1024x1024.jpg",
     releaseDate: "2024-05",
     releaseText: "may 2024",
     links: [
@@ -407,7 +407,7 @@ const MyReleases = [
     artist: "Cyjet",
     id: "ep08",
     title: "dead north",
-    cover_image: "images/ep08 dead-north 1024x1024.jpg",
+    cover_image: "images/ep08-dead-north-1024x1024.jpg",
     releaseDate: "2024-02",
     releaseText: "february 2024",
     links: [
@@ -440,7 +440,7 @@ const MyReleases = [
     artist: "Cyjet",
     id: "ep07",
     title: "switch break",
-    cover_image: "images/ep07 switch-break 1024x1024.jpg",
+    cover_image: "images/ep07-switch-break-1024x1024.jpg",
     releaseDate: "2023-12",
     releaseText: "december 2023",
     links: [
@@ -479,7 +479,7 @@ const MyReleases = [
     artist: "Cyjet",
     id: "ep06",
     title: "light chaser",
-    cover_image: "images/ep06 light-chaser 1024x1024.jpg",
+    cover_image: "images/ep06-light-chaser-1024x1024.jpg",
     releaseDate: "2023-08",
     releaseText: "august 2023",
     links: [
@@ -518,7 +518,7 @@ const MyReleases = [
     artist: "Cyjet",
     id: "ep05",
     title: "dark lands",
-    cover_image: "images/ep05 dark-lands 1024x1024.jpg",
+    cover_image: "images/ep05-dark-lands-1024x1024.jpg",
     releaseDate: "2023-06",
     releaseText: "june 2023",
     links: [
@@ -547,7 +547,7 @@ const MyReleases = [
     artist: "Cyjet",
     id: "ep04",
     title: "neon ride",
-    cover_image: "images/ep04 neon-ride 1024x1024.jpg",
+    cover_image: "images/ep04-neon-ride-1024x1024.jpg",
     releaseDate: "2023-04",
     releaseText: "april 2023",
     links: [
@@ -581,7 +581,7 @@ const MyReleases = [
     artist: "Cyjet",
     id: "ep03",
     title: "scan lines",
-    cover_image: "images/ep03 scan-lines 1024x1024.jpg",
+    cover_image: "images/ep03-scan-lines-1024x1024.jpg",
     releaseDate: "2023-03",
     releaseText: "march 2023",
     links: [
@@ -610,7 +610,7 @@ const MyReleases = [
     artist: "Cyjet",
     id: "ep02",
     title: "cargo cult",
-    cover_image: "images/ep02 cargo-cult 1500x1500.jpg",
+    cover_image: "images/ep02-cargo-cult-1500x1500.jpg",
     releaseDate: "2022-11",
     releaseText: "november 2022",
     links: [
@@ -639,7 +639,7 @@ const MyReleases = [
     artist: "Cyjet",
     id: "ep01",
     title: "dust craft",
-    cover_image: "images/ep01 dust-craft 1500x1500.jpg",
+    cover_image: "images/ep01-dust-craft-1500x1500.jpg",
     releaseDate: "2022-10",
     releaseText: "october 2022",
     links: [
