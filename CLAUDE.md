@@ -46,7 +46,7 @@ Each entry in `MyReleases`:
 
 1. **Prepend** a new entry to `MyReleases` at the top of `releases.js` (the first entry becomes the hero).
 2. Add the artwork under `images/` and point `cover_image` at it.
-3. Keep `releases-schema.json` in sync by hand (add the album + track blocks) — it lags easily, and it currently has no entry for EP17.
+3. Keep `releases-schema.json` in sync by hand (add the album + track blocks) — it lags easily; as of the EP17 entry it covers ep01–ep17.
 4. Commit and push to `main`; Cloudflare Pages deploys automatically.
 
 ## Development

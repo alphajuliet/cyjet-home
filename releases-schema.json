@@ -23,6 +23,69 @@
   "album": [
     {
       "@type": "MusicAlbum",
+      "@id": "https://cyjet.online/releases/ep17",
+      "name": "cities fold",
+      "alternateName": "Cities Fold EP",
+      "identifier": "ep17",
+      "albumProductionType": "http://schema.org/StudioAlbum",
+      "albumReleaseType": "http://schema.org/EPRelease",
+      "datePublished": "2026-06",
+      "genre": ["Electronic", "Ambient"],
+      "byArtist": {
+        "@type": "MusicGroup",
+        "name": "Cyjet"
+      },
+      "image": "https://cyjet.online/images/ep17-cities-fold-1500x1500.jpg",
+      "sameAs": [
+        "https://cyjet.bandcamp.com/album/cities-fold",
+        "https://open.spotify.com/album/3X8tXfgHQesMyPvllRF6Dc",
+        "https://music.youtube.com/playlist?list=OLAK5uy_k_IJr7Kjnk2XRnYaw4EyQsclQsvQg5BxE",
+        "https://geo.music.apple.com/album/cities-fold-ep/6784353798",
+        "https://music.amazon.com/albums/B0H6NFHGL4",
+        "https://www.deezer.com/album/1014483971",
+        "http://www.tidal.com/album/536843387"
+      ],
+      "track": [
+        {
+          "@type": "MusicRecording",
+          "name": "Intent",
+          "position": 1,
+          "duration": "PT4M47S",
+          "isrcCode": "CAENV2671833",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "cities fold"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Antiprism",
+          "position": 2,
+          "duration": "PT6M30S",
+          "isrcCode": "CAENV2671832",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "cities fold"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Targeted",
+          "position": 3,
+          "duration": "PT4M28S",
+          "isrcCode": "CAENV2671835",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "cities fold"}
+        },
+        {
+          "@type": "MusicRecording",
+          "name": "Istone",
+          "position": 4,
+          "duration": "PT6M16S",
+          "isrcCode": "CAENV2671834",
+          "byArtist": {"@type": "MusicGroup", "name": "Cyjet"},
+          "inAlbum": {"@type": "MusicAlbum", "name": "cities fold"}
+        }
+      ]
+    },
+    {
+      "@type": "MusicAlbum",
       "@id": "https://cyjet.online/releases/ep16",
       "name": "foreground",
       "alternateName": "Foreground EP",
