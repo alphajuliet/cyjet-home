@@ -3,6 +3,45 @@
 const MyReleases = [
   {
     artist: "Cyjet",
+    id: "ep18",
+    title: "spin glass",
+    cover_image: "images/ep18-spin-glass-1500x1500.jpg",
+    releaseDate: "2026-10",
+    releaseText: "october 2026",
+    links: [
+      {
+        site: "All sites",
+        href: "https://release.landr.com/cyjet-spin-glass",
+      },
+      {
+        site: "Spotify",
+        href: "https://open.spotify.com/album/2TGpW5qftzaXjT9HytN6bb",
+      },
+      {
+        site: "YouTube Music",
+        href: "https://music.youtube.com/playlist?list=OLAK5uy_nVJvFrcUX-wZyeA3WCWoqOJwab8fkuDW8",
+      },
+      {
+        site: "Apple Music",
+        href: "https://geo.music.apple.com/us/album/spin-glass-ep/6827271636?app=music&ls=1",
+      },
+      {
+        site: "Amazon Music",
+        href: "https://music.amazon.com/albums/B0HPCHRXBX?ref=dm_ff_amazonmusic_3p",
+      },
+      {
+        site: "Deezer",
+        href: "https://www.deezer.com/album/1131223601",
+      },
+      {
+        site: "Tidal",
+        href: "http://www.tidal.com/album/573345350",
+      },
+    ],
+    trackList: ["Mazarine", "Lattice", "Alice Blue", "Merinco"],
+  },
+  {
+    artist: "Cyjet",
     id: "ep17",
     title: "cities fold",
     cover_image: "images/ep17-cities-fold-1500x1500.jpg",
