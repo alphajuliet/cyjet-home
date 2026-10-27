@@ -14,6 +14,10 @@ const MyReleases = [
         href: "https://release.landr.com/cyjet-spin-glass",
       },
       {
+        site: "Bandcamp",
+        href: "https://cyjet.bandcamp.com/album/spin-glass",
+      },
+      {
         site: "Spotify",
         href: "https://open.spotify.com/album/2TGpW5qftzaXjT9HytN6bb",
       },
